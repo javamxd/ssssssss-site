@@ -1,0 +1,13 @@
+{
+  "name": "ssssssss-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "node install.js",
+	"build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC"
+
+}

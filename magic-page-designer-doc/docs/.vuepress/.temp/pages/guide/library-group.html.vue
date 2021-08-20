@@ -1,0 +1,26 @@
+<template><h1 id="分组配置" tabindex="-1"><a class="header-anchor" href="#分组配置" aria-hidden="true">#</a> 分组配置</h1>
+<h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例" aria-hidden="true">#</a> 示例</h2>
+<div class="language-typescript ext-ts line-numbers-mode"><pre v-pre class="language-typescript"><code><span class="token keyword">const</span> data<span class="token operator">:</span> ComponentGroupInfo <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+  title<span class="token operator">:</span> <span class="token string">'文本'</span><span class="token punctuation">,</span>
+  list<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="id" tabindex="-1"><a class="header-anchor" href="#id" aria-hidden="true">#</a> id</h2>
+<ul>
+<li>类型：<code>string</code></li>
+<li>必填：<code>是</code></li>
+</ul>
+<p>相同<code>id</code>的组件配置会分到一起展示</p>
+<h2 id="title" tabindex="-1"><a class="header-anchor" href="#title" aria-hidden="true">#</a> title</h2>
+<ul>
+<li>类型：<code>string</code></li>
+<li>必填：<code>否</code></li>
+</ul>
+<p>展示分组的标题，如果为空，默认值为：<code>未设置分组名称</code></p>
+<h2 id="list" tabindex="-1"><a class="header-anchor" href="#list" aria-hidden="true">#</a> list</h2>
+<ul>
+<li>类型：<code>Array&lt;PageDom&gt;</code></li>
+<li>必填：<code>是</code></li>
+</ul>
+<p>展示到该分组的组件配置</p>
+</template>

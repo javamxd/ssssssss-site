@@ -1,0 +1,1 @@
+import{o as a,c as s,a as d,b as e}from"./app.d91e33a4.js";const r={},n={id:"asdsad",tabindex:"-1"},t=[d("a",{class:"header-anchor",href:"#asdsad","aria-hidden":"true"},"#",-1),e(" asdsad")];r.render=function(d,e){return a(),s("h2",n,t)};export{r as default};

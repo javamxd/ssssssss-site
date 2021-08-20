@@ -1,0 +1,3 @@
+<template><h1 id="配置简介" tabindex="-1"><a class="header-anchor" href="#配置简介" aria-hidden="true">#</a> 配置简介</h1>
+<p>组件库和页面<code>dom</code>配置采用的同一个对象，为了属性好对应上，组件库配置会比<code>dom</code>配置多一个<code>ext</code>属性，专门用来记录组件库的配置，并且不会带入到<code>mpdPageConfig</code>中，其中所有默认的组件配置，都支持覆盖，只需要<code>id</code>相同就行</p>
+</template>
