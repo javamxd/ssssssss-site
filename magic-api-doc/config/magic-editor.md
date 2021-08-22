@@ -1,5 +1,6 @@
 ---
 sidebarDepth: 3
+sidebar: false
 ---
 
 # magic-editor配置

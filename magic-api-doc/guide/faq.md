@@ -1,27 +1,6 @@
 ## 常见问题
 
-- [如何配置JSON日期的格式](#如何配置json日期的格式)
-- [出现找不到db模块的错误](#出现找不到db模块的错误)
-- [如何获取RequestBody中的参数](#如何获取requestbody中的参数)
-- [如何获取Header中的参数](#如何获取header中的参数)
-- [如何获取Cookie中的参数](#如何获取cookie中的参数)
-- [如何获取Session中的参数](#如何获取session中的参数)
-- [如何获取PathVariable中的参数](#如何获取pathvariable中的参数)
-- [如何获取上传的文件](#如何获取上传的文件)
-- [如何获取提交的数组参数](#如何获取提交的数组参数)
-- [如何打印SQL语句](#如何打印sql语句)
-- [如何给接口添加权限](#如何给接口添加权限)
-- [如何给UI添加权限](#如何给ui添加权限)
-- [对于UI界面如何使用Token鉴权](#对于ui界面如何使用token鉴权)
-- [${}和#{}的区别](#和-的区别)
-- [如何循环拼接参数](#如何循环拼接参数)
-- [多数据源如何配置](#多数据源如何配置)
-- [SQL执行报错java.sql.SQLFeatureNotSupportedException: null](#sql执行报错java-sql-sqlfeaturenotsupportedexception-null)
-- [如何自定义返回结果](#如何自定义返回结果)
-- [页面加载缓慢](#页面加载缓慢)
-- [脚本内容被转义](#脚本内容被转义)
-- [执行测试无响应](#执行测试无响应)
-- [访问UI404](#访问ui404)
+[[toc]]
 
 ## 如何配置JSON日期的格式
 使用`Jackson`的配置如下(`Spring Boot`默认使用`Jackson`)：
@@ -116,11 +95,6 @@ public class PermissionInterceptor implements RequestInterceptor {
 
 请参考[自定义UI鉴权](./custom/authorization)
 
-## 对于UI界面如何使用Token鉴权
-
-目前使用Vue的方式，对请求进行拦截进行实现，请参考[在Vue中使用](./custom/vue)和[magic-editor配置](../config/magic-editor)
-
-通过上述配置，可使编辑器在请求时携带`Token`信息，然后由自己应用进行统一鉴权配置。
 
 ## ${}和#{}的区别
 主要区别在于`${}`用于拼接SQL(会产生SQL注入问题)，`#{}`会替换成占位符（不会产生SQL注入问题），这里的区别于`Mybatis`一致
@@ -169,7 +143,7 @@ db.slave.select('select * from sys_user');  //使用slave数据源
 
 ## 如何自定义返回结果
 - 通过配置文件进行配置，具体参考[spring-boot配置](../config)
-- 通过`自定义JSON结果`，具体定义方法查看[自定义JSON结果](./custom/json)
+- 通过`自定义JSON结果`，具体定义方法查看[自定义JSON结果](../tutorials/json)
 - 通过`自定义拦截器`拦截返回自己想要的格式，具体定义方法查看[自定义拦截器](./custom/interceptor)
 - 通过`spring`的拦截器返回想要的格式，如`ResponseBodyAdvice`，`HandlerMethodReturnValueHandler`（这种方式目前会影响到UI,故不推荐使用）
 

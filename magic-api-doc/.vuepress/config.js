@@ -14,12 +14,13 @@ module.exports = {
 		docsDir : '/magic-api-doc',
 		lastUpdated: "上次更新",
 		searchMaxSuggestions: 10,
+		noFoundPageByTencent: false,
 		mode: 'light',
 		modePicker: false,
 		nav : [{
 			text : '指南',
-			link : '/'
-		},{
+			link : '/#index'
+		}, {
 			text : '配置',
 			link : '/config/'
 		},{
@@ -42,39 +43,35 @@ module.exports = {
 			link : 'https://qm.qq.com/cgi-bin/qm/qr?k=Q6dLmVS8cHwoaaP18A3tteK_o0244e6B&jump_from=webapi'
 		}],
 		sidebar:{
-			'/' : [{
-				title : '使用教程',
-				collapsable: false,
-				children: ['','guide/quick-start','guide/grammer']
-			},{
-				title : '案例集',
-				collapsable: false,
-				children: ['guide/cases/sql','guide/cases/transcation','guide/cases/convert','guide/cases/validate','guide/cases/cache','guide/cases/async']
-			},{
-				title: '模块',
-				collapsable: false,
-				children: ['guide/modules/db', 'guide/modules/magic', 'guide/modules/assert', 'guide/modules/log', 'guide/modules/redis', 'guide/modules/mongodb', 'guide/modules/request', 'guide/modules/response', 'guide/modules/env', 'guide/modules/http']
-			},{
-				title: '函数库',
-				collapsable: false,
-				children: ['guide/functions/aggregation', 'guide/functions/other']
-			}, {
-				title: '类型扩展',
-				collapsable: false,
-				children: ['guide/extension/','guide/extension/object','guide/extension/number','guide/extension/date','guide/extension/collection','guide/extension/map','guide/extension/class','guide/extension/pattern']
-			},{
-				title : '高级应用',
-				collapsable: false,
-				children: ['guide/custom/vue',`guide/custom/cluster`, 'guide/custom/linq', 'guide/custom/json', 'guide/custom/page', 'guide/custom/interceptor', 'guide/custom/authorization', 'guide/custom/cache', 'guide/custom/datasource', 'guide/custom/extension', 'guide/custom/resource', 'guide/custom/module', 'guide/custom/magic', 'guide/custom/swagger', 'guide/custom/sql', 'guide/custom/column', 'guide/custom/function','guide/custom/language', 'guide/custom/dialect']
-			},{
-				title : 'FAQ',
-				collapsable: false,
-				children: ['guide/faq']
-			}],
 			'/config/' : [{
 				title : '配置',
 				collapsable: false,
 				children: ['','magic-editor']
+			}],
+			'/' : [{
+				title : '介绍',
+				collapsable: false,
+				children: ['','guide/quick-start']
+			},{
+				title : '使用入门',
+				collapsable: false,
+				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'page','async','convert', 'validate', 'java', 'doc', 'deploy'].map(it => `tutorials/${it}`)
+			},{
+				title : '权限配置',
+				collapsable: false,
+				children: ['login', 'operation', 'api'].map(it => `authorization/${it}`)
+			},{
+				title: '模块&函数&类型扩展',
+				collapsable: false,
+				children: ['module', 'function', 'extension'].map(it => `script/${it}`)
+			},{
+				title : '高级应用',
+				collapsable: false,
+				children: ['linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect'].map(it => `guide/custom/${it}`)
+			},{
+				title : 'FAQ',
+				collapsable: false,
+				children: ['guide/faq']
 			}]
 		}
     },
