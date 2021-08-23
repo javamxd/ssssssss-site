@@ -269,6 +269,10 @@ const data: ComponentGroupInfo = {
 - 类型：`string`
 - 必填：`否`
 
+::: warning
+只有在 type='attr'时生效
+:::
+
 相同分组的放到同一个`string`下，免得配置项过多，导致配置不好找，也可以进行区分配置项功能
 
 ### help
