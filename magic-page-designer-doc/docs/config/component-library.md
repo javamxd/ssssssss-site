@@ -203,7 +203,7 @@ export interface ComponentConfig {
   name: string
   // 默认值
   defaultValue?: any
-  // 分组，相同分组的放到同一个tab下
+  // 分组，相同分组的放到同一个tab下，只有在type='attr'时生效
   group?: string
   // 帮助信息
   help?: string
