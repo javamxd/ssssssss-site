@@ -1,6 +1,5 @@
 ---
 sidebarDepth: 3
-sidebar: false
 ---
 
 # spring-boot配置
