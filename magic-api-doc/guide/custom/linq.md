@@ -11,6 +11,7 @@
     [group by tableAlias.field[,...]]
     [having condition]
     [order by tableAlias.field[asc|desc][,tableAlias.field[asc|desc]]]
+    [limit expr [offset expr]]
 ```
 > 需要注意的是，select、from、left join、group by、having、order by、asc、desc、on、and、or 是区分大小写的
 ### 执行步骤
@@ -21,6 +22,7 @@
 - 处理`group by` 对虚拟表VT1、VT2进行分组操作，将符合`having condition`的值加入虚拟表VT3中
 - 处理`select` 从VT3中选择指定的列，加入虚拟表VT4中
 - 处理`order by` 对虚拟表VT4进行排序
+- 处理`limit`
 
 ## select子句
 ```sql
@@ -67,4 +69,13 @@ having count(t.name) > 1
 ```sql
 -- asc可以不写，默认是asc
 order by t.name desc,t.xxx 
+```
+
+## limit 子句
+```sql
+limit 1 -- 固定取第一项，返回值会是对象，而非List
+-- 跳过(page - 1) * pageSize条取pageSize条
+limit pageSize offset (page - 1) * pageSize
+-- 取前pageSize条
+limit pageSize
 ```

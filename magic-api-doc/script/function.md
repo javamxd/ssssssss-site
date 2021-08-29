@@ -1,3 +1,6 @@
+---
+subSidebar: false
+---
 # 函数
 
 [[toc]]

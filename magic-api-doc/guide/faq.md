@@ -1,3 +1,6 @@
+---
+subSidebar: false
+---
 ## 常见问题
 
 [[toc]]
