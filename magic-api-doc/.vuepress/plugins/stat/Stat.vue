@@ -11,7 +11,7 @@
             s.parentNode.insertBefore(element, s);
             this.$router.beforeEach((to, from, next) => {
                 try{
-                  window._czc.push(["_trackPageview",to.path])
+                  window._czc.push(["_trackPageview",'magic-api' + to.path])
                 }catch(e){
                 }
                 next()

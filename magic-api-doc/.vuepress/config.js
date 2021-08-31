@@ -58,7 +58,7 @@ module.exports = {
 			},{
 				title : '使用入门',
 				collapsable: false,
-				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'page','async','convert', 'validate', 'java', 'doc', 'deploy'].map(it => `tutorials/${it}`)
+				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'deploy'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
