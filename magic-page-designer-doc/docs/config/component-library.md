@@ -158,6 +158,8 @@ export interface MpdConfig {
   event?: { [key: string]: (...arg: any) => void }
   // text内容
   text?: string
+  // slot内容
+  slot?: Array<PageDom>
   // 记录一些属性用的配置，用于设计器配置
   configTmp?: { [key: string]: any }
 }
@@ -203,8 +205,8 @@ export interface ComponentConfig {
   name: string
   // 默认值
   defaultValue?: any
-  // 分组，相同分组的放到同一个tab下，只有在type='attr'时生效
-  group?: string
+  // 分组，相同分组的放到同一个tab下，只有在type='attr'时生效，如果为general则会放到常规配置里面
+  group?: 'general' | string
   // 帮助信息
   help?: string
   // 可配置列表

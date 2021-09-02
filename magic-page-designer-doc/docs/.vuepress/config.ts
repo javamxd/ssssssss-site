@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/magic-page-designer/',
+  base: '/magic-page-designer-doc/',
   lang: 'zh-CN',
   title: 'magic-page-designer',
   description: '在线页面快速开发平台',
@@ -96,12 +96,17 @@ module.exports = {
         {
           text: '使用教程',
           collapsable: false,
-          children: ['intro', 'quick-start']
+          children: ['intro', 'quick-start'].map((it) => `/guide/${it}`)
+        },
+        {
+          text: '使用入门',
+          collapsable: false,
+          children: ['window-profile', 'variable'].map((it) => `/guide/started/${it}`)
         },
         {
           text: '组件库',
           collapsable: false,
-          children: ['library-function', 'library-group', 'library-component']
+          children: ['function', 'group', 'component'].map((it) => `/guide/library/${it}`)
         }
       ],
       '/config/': [
