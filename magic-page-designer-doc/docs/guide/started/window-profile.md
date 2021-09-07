@@ -73,7 +73,7 @@
 组件事件，写法如下
 
 ```ts
-;(arg1, arg2) => {
+(arg1, arg2) => {
   // 这里是自定义代码
   console.log(this.mpdPageValue, arg1, arg2)
 }

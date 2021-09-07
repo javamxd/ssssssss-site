@@ -72,6 +72,7 @@ app.mount('#app')
     :mpdPageValue.sync="mpdPageValue"
     :selectPageNodeDom.sync="selectPageNodeDom"
     :editorMode="editorMode"
+    @mpdSave="mpdSave"
   ></magic-page-designer>
 </template>
 
@@ -88,6 +89,12 @@ export default {
       // 是否编辑模式，默认false
       editorMode: true
     }
+  },
+  methods: {
+    // 保存事件
+    mpdSave(mpdPageConfigVal) {
+      console.log('mpdSave', mpdPageConfigVal)
+    }
   }
 }
 </script>
@@ -103,6 +110,7 @@ export default {
     v-model:mpdPageValue="mpdPageValue"
     v-model:selectPageNodeDom="selectPageNodeDom"
     :editorMode="editorMode"
+    @mpdSave="mpdSave"
   ></magic-page-designer>
 </template>
 
@@ -116,6 +124,11 @@ const mpdPageValue = reactive({})
 const selectPageNodeDom = reactive({})
 // 是否编辑模式，默认false
 const editorMode = ref(true)
+
+// 保存事件
+function mpdSave(mpdPageConfigVal) {
+  console.log('mpdSave', mpdPageConfigVal)
+}
 </script>
 ```
 
