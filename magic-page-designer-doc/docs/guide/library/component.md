@@ -148,10 +148,12 @@ const data: ComponentGroupInfo = {
 
 绑定到组件的属性，`value`支持以`$:`开头的`js`源码写法，比如`text`属性想绑定变量`text`：`{value: this.mpdPageValue.text}`
 
-### class<Badge type="danger" text="暂时不支持表达式，后续扩展" vertical="middle" />
+### class
 
 - 类型：`string`
 - 必填：`否`
+
+绑定到`class`属性上的字段，`${}`，表达式取对应变量，原理是用计算属性 computed 实现的，所以要加 this，比如：`${this.mpdPageValue.xxxx} ${this.mpdPageValue.arg1 === '1'?'class1':''}`
 
 ### style
 
@@ -172,7 +174,7 @@ const data: ComponentGroupInfo = {
 - 类型：`string`
 - 必填：`否`
 
-用于展示到组件内部的文本，部分标签支持，比如`p`标签，原理是`slot`标签实现。该输入框支持：${}，表达式取对应变量，原理是用计算属性computed实现的，所以要加this，比如：这是文字${this.mpdPageValue}
+用于展示到组件内部的文本，部分标签支持，比如`p`标签，原理是`slot`标签实现。该输入框支持：`${}`，表达式取对应变量，原理是用计算属性 computed 实现的，所以要加 this，比如：`这是文字${this.mpdPageValue}`
 
 ### slot
 

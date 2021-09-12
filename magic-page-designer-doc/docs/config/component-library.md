@@ -220,7 +220,7 @@ export interface ComponentConfig {
 export interface InputListConfig {
   // 组件标题
   title?: string
-  // 配置类型，默认会添加一个a-input
+  // 配置类型，默认会添加一个a-textarea
   component: ConfigDetailType
   // attr中的value，如果是"$:"开头会放入到eval中执行
   attr?: { [key: string]: any }

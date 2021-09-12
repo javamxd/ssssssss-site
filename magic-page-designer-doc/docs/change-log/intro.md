@@ -5,8 +5,8 @@
 
 # 更新计划
 
-1. 增加`class`表达式配置，让其可以支持动态配置。[#I4699A](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699A)
-2. 增加`style`表达式配置，让其可以支持动态配置。[#I4699B](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699B)
-3. `vue2`增加生命周期配置，例如`mounted`、`destroyed`等。[#I4699C](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699C)
-4. `vue3`增加生命周期配置，例如`setup`、`unmounted`等。[#I4699D](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699D)
-5. 增加画布选中时可以直接添加子元素的下拉菜单。[#I4699E](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699E)
+1. 增加`style`表达式配置，让其可以支持动态配置。[#I4699B](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699B)
+2. `vue2`增加生命周期配置，例如`mounted`、`destroyed`等。[#I4699C](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699C)
+3. `vue3`增加生命周期配置，例如`setup`、`unmounted`等。[#I4699D](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699D)
+4. 增加画布选中时可以直接添加子元素的下拉菜单。[#I4699E](https://gitee.com/ssssssss-team/magic-page-designer/issues/I4699E)
+5. 增加可定义组件的方法配置。[#I48G1X](https://gitee.com/ssssssss-team/magic-page-designer/issues/I48G1X)

@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/magic-page-designer-doc/',
+  base: '/magic-page-designer/',
   lang: 'zh-CN',
   title: 'magic-page-designer',
   description: '在线页面快速开发平台',
