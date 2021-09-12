@@ -1,6 +1,5 @@
 ---
 sidebarDepth: 3
-sidebar: false
 ---
 
 # magic-editor配置
@@ -14,6 +13,9 @@ sidebar: false
     defaultTheme: 'default',
     defaultExpand: true,
     checkUpdate: true,
+    jdbcDrivers:['driver1','driver2'],
+    datasourceTypes:['type1', 'type2'],
+    options: [['key1', '描述','defaultValue1'],['key2','描述','defaultValue2']],      
     blockClose: true,   // 是否阻止离开页面      
     autoSave: true, 
     decorationTimeout: 10000,
@@ -180,12 +182,24 @@ var MAGIC_EDITOR_CONFIG = {
 编辑器的默认皮肤，默认值为`default`，内置有`default`和`dark`
 
 ## autoSave <Badge text="1.0.0+" type="error"/>
-- 类型: `Boolean`
+- 类型： `Boolean`
 编辑器是否启用自动保存，默认为`true`
 
 ## decorationTimeout <Badge text="1.0.2+" type="error"/>
 - 类型：`Number`
 编辑器错误提示显示时长，< 0为一直显示，单位为毫秒，默认10秒 
+
+## jdbcDrivers <Badge text="1.4.3+" type="error"/>
+- 类型:`Array<String>`
+`JDBC`驱动列表
+
+## datasourceTypes <Badge text="1.4.3+" type="error"/>
+- 类型：`Array<String>`
+数据源类型列表
+
+## options <Badge text="1.4.3+" type="error"/>
+- 类型：`Array<Array<String>>`
+接口选项列表
   
 ## header
 - 类型: `Object`
