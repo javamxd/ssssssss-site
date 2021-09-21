@@ -4,7 +4,7 @@ sidebar: false
 
 # 更新日志
 
-## [v1.4.4] 2021.09.22
+## [v1.4.5] 2021.09.22
 - 新增创建数组方法
 - 新增支持设置字体和字号
 - 新增`NamedTable`、`Where`类的`page(limit, offset)`方法
