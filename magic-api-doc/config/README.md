@@ -220,7 +220,7 @@ magic-api:
 - 类型：`String`
 - 默认值：`null`(默认不配置)
 
-`magic-api.editor-config` 编辑器配置文件路径,具体请参考[magic-editor配置](./magic-editor)
+`magic-api.editor-config` 编辑器配置文件路径,具体请参考[magic-editor配置](./magic-editor.html)
 
 ## auto-import-module <Badge text="0.3.2+" type="error"/>
 

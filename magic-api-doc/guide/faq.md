@@ -96,7 +96,7 @@ public class PermissionInterceptor implements RequestInterceptor {
 
 ## 如何给UI添加权限
 
-请参考[自定义UI鉴权](./custom/authorization)
+请参考[自定义UI鉴权](../authorization/operation)
 
 
 ## ${}和#{}的区别
@@ -146,8 +146,8 @@ db.slave.select('select * from sys_user');  //使用slave数据源
 
 ## 如何自定义返回结果
 - 通过配置文件进行配置，具体参考[spring-boot配置](../config)
-- 通过`自定义JSON结果`，具体定义方法查看[自定义JSON结果](../tutorials/json)
-- 通过`自定义拦截器`拦截返回自己想要的格式，具体定义方法查看[自定义拦截器](./custom/interceptor)
+- 通过`自定义JSON结果`，具体定义方法查看[自定义JSON结果](../tutorials/json.html)
+- 通过`自定义拦截器`拦截返回自己想要的格式，具体定义方法查看[自定义拦截器](./custom/interceptor.html)
 - 通过`spring`的拦截器返回想要的格式，如`ResponseBodyAdvice`，`HandlerMethodReturnValueHandler`（这种方式目前会影响到UI,故不推荐使用）
 
 
