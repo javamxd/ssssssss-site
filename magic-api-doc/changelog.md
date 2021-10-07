@@ -4,7 +4,7 @@ sidebar: false
 
 # 更新日志
 
-## [v1.5.0]
+## [v1.5.0] 2021.10.08
 - 新增`SQL`参数类型转换器`::sql('clob')`
 - 新增请求拦截器方法`afterCompletion`
 - 新增集合扩展方法`find`、`findIndex`、`concat`、`toMap`
