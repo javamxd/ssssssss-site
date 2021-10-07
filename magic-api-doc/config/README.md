@@ -23,6 +23,7 @@ magic-api:
   support-cross-domain: true # 跨域支持，默认开启
   secret-key: 123456789 # 远程推送时的秘钥，未配置则不开启推送
   push-path: /_magic-api-sync #远程推送的路径，默认为/_magic-api-sync
+  show-sql: true #配置打印SQL
   response: |- #配置JSON格式，格式为magic-script中的表达式
     {
       code: code,
@@ -44,7 +45,7 @@ magic-api:
   backup-config: #备份相关配置
     max-history: -1 #备份保留天数，-1为永久保留
     resource-type: file #备份存储方式，默认为文件，可选 database
-    database: magic  #指定数据源（单数据源时无需配置，多数据源时默认使用主数据源，如果存在其他数据源中需要指定。）
+    datasource: magic  #指定数据源（单数据源时无需配置，多数据源时默认使用主数据源，如果存在其他数据源中需要指定。）
     table-name: magic_api_backup #使用数据库存储备份时的表名
   crud-config: # CRUD相关配置
     logic-delete-column: deleted #逻辑删除列
@@ -139,6 +140,12 @@ magic-api:
 
 `magic-api.push-path` 远程推送的路径，默认为`/_magic-api-sync`
 
+## show-sql <Badge text="1.5.0+" type="error"/>
+- 类型: `Boolean`
+- 默认值：`true`
+
+`magic-api.show-sql` 是否打印`SQL`，默认为`true`
+
 ## backup-config <Badge text="1.3.5+" type="error"/>
 ### resource-type
 - 类型: `String`
@@ -161,7 +168,7 @@ magic-api:
 - 类型: `String`
 - 默认值: `null`
 
-`magic-api.backup-config.database` 指定数据源（单数据源时无需配置，多数据源时默认使用主数据源，如果存在其他数据源中需要指定。）
+`magic-api.backup-config.datasource` 指定数据源（单数据源时无需配置，多数据源时默认使用主数据源，如果存在其他数据源中需要指定。）
 
 ### max-history
 - 类型: `int`

@@ -4,6 +4,35 @@ sidebar: false
 
 # 更新日志
 
+## [v1.5.0]
+- 新增`SQL`参数类型转换器`::sql('clob')`
+- 新增请求拦截器方法`afterCompletion`
+- 新增集合扩展方法`find`、`findIndex`、`concat`、`toMap`
+- 新增`UI`对话框最近打开功能
+- 新增`UI`函数、接口快速定位
+- 新增`SQL`日志打印配置
+- 新增单表`API`的`primary(String, Function)` 方法，用于惰性设置主键值
+- 新增单表`API`的`NamedTable.clone`、`Where.clone` 方法
+- 修复在未定义变量时，可能造成的变量作用域混乱的问题
+- 修复在调用第三方脚本引擎时部分变量丢失的`BUG`
+- 修复在有`BigDecimal`类型参与运算时，精度可能不正确的问题
+- 修复双重循环`break`会出现死循环的`BUG`
+- 修复`linq`中`left join`结果不正确的问题
+- 修复`linq`中`having`语句不生效的问题
+- 修复部分操作符可能无法匹配类型的问题
+- 修复脚本可能出现的`OOM`的`BUG`
+- 修复调用函数时，传入`lambda`可能造成的变量作用域混乱的问题
+-  修复递归调用时，变量读写混乱的`BUG`
+- 优化`log`模块日志显示，将类名改为接口+路径
+- 优化历史记录显示，增加显示修改人
+- 优化代码格式化，解决不支持`1l`、`1m`、`1d`等写法的问题
+- 优化测试数据源连接失败的日志
+- 优化`map`类型动态`key`值的写法，由`$key`改为`[key]`
+- 优化错误提示，更准确的行列号定位
+- 优化`UI`关闭按钮样式
+- 文档内容补充以及优化
+- `magic-api.backup-config.database`变更为`magic-api.backup-config.datasource`
+
 ## [v1.4.5] 2021.09.22
 - 新增创建数组方法
 - 新增支持设置字体和字号

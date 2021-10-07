@@ -63,7 +63,27 @@ public class CustomAuthorizationInterceptor implements AuthorizationInterceptor 
 
 对于需要单独访问的，需要将应用的权限校验对路径`/magic/web/**`放行，交给`magic-api`处理，其它无需配置
 
-对于`magic-api` `UI`中对生成出的接口执行测试时，可能会被自身应用权限校验不通过。此时要么模拟测试时将`Header`携带上，要么对生成的接口进行放行，如果还需要校验，请使用另外两种方式。
+对于`magic-api` `UI`中对生成出的接口执行测试时，可能会被自身应用权限校验不通过。此时要么模拟测试时将`Header`携带上，要么对生成的接口进行放行，如果还需要校验，请看一下几种方式。
+
+### Jar集成
+
+默认情况下就是`Jar`集成的方式，此时需要配置编辑器的请求设置
+```yml
+magic-api:
+  editor-config: classpath:./magic-editor-config.js #编辑器配置
+```
+`magic-editor-config.js`文件内容如下：
+```js
+var MAGIC_EDITOR_CONFIG = {
+    request: {
+        beforeSend: function(config){
+            // 如果是基于Cookie验证的，此处可以不配。
+            config.headers.token = ...; // 此处自行获取Token
+            return config;
+        }
+    }
+}
+```
 
 ### Vue方式
 

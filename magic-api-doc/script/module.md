@@ -88,7 +88,6 @@ return db.selectValue('select user_name from sys_user limit 1');
 - 返回值：`Object`  默认返回为Object，如果自定义了分页结果，则返回自定义结果
 - 函数说明：分页查询
 ```js
-//需要保证结果返回一行一列 
 return db.page('select * from sys_user');  
 ```
 ### update

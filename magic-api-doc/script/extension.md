@@ -52,7 +52,7 @@ return '1234'.toInt();
 //return str.toInt();
 ```
 
-### Object
+## Object扩展
 `java.lang.Object`的扩展方法
 
 ### asInt
@@ -360,6 +360,22 @@ var list = [1,5,2,3,6];
 return list.sort((a,b)=>a-b);
 ```
 
+### first
+- 返回值： `Object`
+- 函数说明：返回集合的第一项，集合为空时返回`null`
+```js
+var list = [1,2,3,4,5]
+return list.first(); // 1
+```
+
+### last
+- 返回值： `Object`
+- 函数说明：返回集合的最后一项，集合为空时返回`null`
+```js
+var list = [1,2,3,4,5]
+return list.last(); // 5
+```
+
 ### reserve
 
 - 返回值：`Object`
@@ -545,6 +561,44 @@ return vals.some(e=>e == 0); // false
 ```js
 var vals = [1,2,3];
 return vals.reduce((sum,val)=>sum + val); // 6
+```
+### find
+- 入参：`function`：`Function` 查找函数，如：`it => it.name == 'A'`
+- 返回值：`Object`
+- 函数说明：循环集合查找符合条件的对象
+```js
+var list = [{name: 'A'}, {name:'B'}]
+return list.find(it => it.name == 'A');  // {name: 'A'}
+```
+
+### findIndex
+- 入参：`function`：`Function` 查找函数，如：`it => it.name == 'A'`
+- 返回值：`Object`
+- 函数说明：循环集合查找符合条件的对象位置
+```js
+var list = [{name: 'A'}, {name:'B'}]
+return list.findIndex(it => it.name == 'A');  // 0
+```
+
+### concat
+- 入参：`Object`，要连接的集合对象，可写多个
+- 返回值：`Object`
+- 函数说明：拼接一个或多个集合，返回新的集合
+```js
+var list = [1];
+return [1].concat([2]);  // [1,2] list不变
+return [1].concat([2],[3, 4]);  // [1, 2, 3, 4] list不变
+```
+### toMap
+- 入参：`mappingKey`：`Function`，`key`映射方法，如:`it => it.id`
+- 入参：`mappingValue`：`Function`，`value`映射方法，如:`it => {name: it.name}`,可省略，默认为本身
+```js
+var list = [
+    {id : 1, name: 'A'},
+    {id : 2, name: 'B'},
+    {id : 3, name: 'C'},
+]
+return list.toMap(k => k.id, v => v.name)   // {1: 'A', 2: 'B', 3: 'C'}
 ```
 
 ### skip

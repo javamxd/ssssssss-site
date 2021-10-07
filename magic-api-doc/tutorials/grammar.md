@@ -123,7 +123,7 @@
 |list|`[1,2,3,4,5]`|
 |map|`{key : value,key1 : value}`|
 
-{$key : "value"}//$key表示动态从变量中获取key值
+`{[key] : "value"}` `[key]表示动态从变量中获取key值`
 
 ## 一元运算符
 

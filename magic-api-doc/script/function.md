@@ -45,7 +45,7 @@ public class MyCustomFunction implements MagicFunction {
 }
 ```
 
-### 聚合函数
+## 聚合函数
 
 ### count
 - 入参：`target`:`Object`
@@ -122,18 +122,109 @@ return date_format(new Date());  // 2020-01-01 20:30:30
 return now(); // 等同于 new Date();
 ```
 
-## 其它函数
-
-### ifnull
-- 入参：`target`:`Object`  判断的目标
-- 入参：`trueValue`:`Object`   为空时的值
-- 入参：`falseValue`:`Object`  不为空时的值
-- 返回值：`Object`
-- 函数说明：对空值进行判断，返回特定值
+### current_timestamp_millis
+- 返回值：`long`
+- 函数说明： 取当前时间戳(毫秒)
 ```js
-return ifnull(null,1) // 1
-// return ifnull(0,1) // 0
+return current_timestamp_millis(); // 等同于 System.currentTimeMillis();
 ```
+
+### current_timestamp
+- 返回值：`long`
+- 函数说明： 取当前时间戳(秒)
+```js
+return current_timestamp(); // 等同于 current_timestamp_millis() / 1000;
+```
+## 字符串函数
+
+### uuid
+- 返回值: `String` `32`位无`-`的`UUID`
+```js
+return uuid(); // 等同于 UUID.randomUUID().toString().replace("-", "");
+```
+### is_blank
+- 入参：`target`:`String`  判断的目标
+- 返回值： `boolean`
+- 函数说明：判断字符串是否为空
+```js
+return is_blank(''); // true 等同于 StringUtils.isBlank 一致
+```
+
+### not_blank
+- 入参：`target`:`String`  判断的目标
+- 返回值： `boolean`
+- 函数说明：判断字符串是否不为空
+```js
+return not_blank(''); // false 等同于 !is_blank('')
+```
+## 数组函数
+
+### new_int_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`int`类型的数组
+```js
+return new_int_array(1); // [0]
+```
+
+### new_long_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`long`类型的数组
+```js
+return new_long_array(1); // [0]
+```
+
+### new_double_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`double`类型的数组
+```js
+return new_double_array(1); // [0.0]
+```
+
+### new_float_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`float`类型的数组
+```js
+return new_float_array(1); // [0.0]
+```
+
+### new_short_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`short`类型的数组
+```js
+return new_short_array(1); // [0]
+```
+
+### new_byte_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`byte`类型的数组
+```js
+return new_byte_array(1); // [0]
+```
+
+### new_boolean_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`boolean`类型的数组
+```js
+return new_boolean_array(1); // [0]
+```
+
+### new_char_array
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`char`类型的数组
+```js
+return new_char_array(1); // [0]
+```
+
+### new_array
+- 入参：`Class`：类型
+- 入参：`size`：`int` 数组长度
+- 函数说明，创建`Object`类型的数组
+```js
+return new_array(1); // [null]  // Object 类型的数组
+return new_array(String.class, 1); // [null] String类型的数组
+```
+
+## 数学函数
 
 ### round
 - 入参：`number`:`Number`  目标值
@@ -167,4 +258,55 @@ return ceil(123.456d);  // 124;
 - 函数说明：将数值转为百分比
 ```js
 return percent(0.1289999999,2);  // "12.90%"
+```
+
+
+## 其它函数
+
+### print
+- 入参：`target`：`Object` 要打印的对象
+- 函数说明：打印
+```js
+print('abc'); // 等同于 System.out.print("abc");
+```
+
+### println
+- 入参：`target`：`Object` 要打印的对象
+- 函数说明：打印并换行
+```js
+println('abc'); // 等同于 System.out.println("abc");
+```
+
+### printf
+- 入参：`format`：`String` 要打印的对象
+- 入参：`target`： `Object` 参数值，可以写多个
+- 函数说明：按照格式打印并换行
+```js
+printf('%s:%s', 'a','b'); // 等同于 System.out.printf("%s:%S", "a", "b");
+```
+
+### not_null
+- 入参：`target` : `Object` 判断的模板
+- 返回值： `boolean`
+- 函数说明：判断值不是`null`
+```js
+return not_null(target); // 等同于 target != null
+```
+
+### is_null
+- 入参：`target` : `Object` 判断的模板
+- 返回值： `boolean`
+- 函数说明：判断值是`null`
+```js
+return is_null(target); // 等同于 target == null
+```
+
+### ifnull
+- 入参：`target`:`Object`  判断的目标
+- 入参：`trueValue`:`Object`   为空时的值
+- 返回值：`Object`
+- 函数说明：对空值进行判断，返回特定值
+```js
+return ifnull(null,1) // 1
+// return ifnull(0,1) // 0
 ```

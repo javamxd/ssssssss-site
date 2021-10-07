@@ -13,6 +13,14 @@ spring:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
 ```
+对于`LocalDateTime`配置
+```java
+@Bean 
+public Jackson2ObjectMapperBuilderCustomizer jackson2ObjectMapperBuilderCustomizer() {
+    LocalDateTimeSerializer localDateTimeSerializer = new LocalDateTimeSerializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+    return builder -> builder.serializerByType(LocalDateTime.class, localDateTimeSerializer); 
+}
+```
 其它的自行参考`json`框架配置
 
 ## 出现找不到db模块的错误
@@ -56,18 +64,6 @@ import request;
 return request.getValues('name');
 ```
 
-## 如何打印SQL语句
-和`JdbcTemplate`的打印SQL语句方式一样
-```yml
-logging:
-  level:
-    org:
-      springframework:
-        jdbc:
-          core:
-            JdbcTemplate: DEBUG #打印SQL
-            StatementCreatorUtils: TRACE  #打印SQL参数
-```
 ## 如何给接口添加权限
 
 一般情况采用`拦截器`实现
@@ -178,3 +174,18 @@ server.compression.min-response-size=256 #大于256kb时压缩
 - 如果是拉源码运行，则需要编译一下前端。
 - 如果以上确定没问题，请检查应用中是否有关于`mvc`的配置，如果有请检查是否是`extends WebMvcConfigurationSupport`的形式，是的话，改成`implements WebMvcConfigurer`的形式。
 - 如以上问题均不存在，请提[ISSUE](https://gitee.com/ssssssss-team/magic-api/issues) 或加群[739235910](https://qm.qq.com/cgi-bin/qm/qr?k=Q6dLmVS8cHwoaaP18A3tteK_o0244e6B&jump_from=webapi)反馈
+
+## 无法DEBUG或无法查看日志
+
+- 由于`DEBUG`和日志是依赖于`WebSocket`实现的，所以需要`WebSocket`支持
+- 请检查`Web`容器是否支持`WebSocket`，如果不支持，需要引入对应依赖或更换支持`WebSocket`的`Web`容器
+- 请检查是否使用了`nginx`之类的代理，如果使用了，需要对配置其支持`WebSocket`，样例如下：
+```nginx
+location /magic/web/console {
+    proxy_pass http://localhost:9999;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_read_timeout 900s;
+}
+```

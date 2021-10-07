@@ -6,7 +6,7 @@
 ```groovy
 // 第一种方式
 import "xx.xxx.xxx.xxx.UserService";    // 使用类名
-return userService.selectUserList();
+return UserService.selectUserList();
 // 第二种方式
 import "userUservice" as userService;   // 使用Bean名
 return userService.selectUserList();
