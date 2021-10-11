@@ -24,6 +24,11 @@ magic-api:
   secret-key: 123456789 # 远程推送时的秘钥，未配置则不开启推送
   push-path: /_magic-api-sync #远程推送的路径，默认为/_magic-api-sync
   show-sql: true #配置打印SQL
+  date-pattern: # 配置请求参数支持的日期格式
+    - yyyy-MM-dd
+    - yyyy-MM-dd HH:mm:ss
+    - yyyyMMddHHmmss
+    - yyyyMMdd
   response: |- #配置JSON格式，格式为magic-script中的表达式
     {
       code: code,
@@ -145,6 +150,12 @@ magic-api:
 - 默认值：`true`
 
 `magic-api.show-sql` 是否打印`SQL`，默认为`true`
+
+## date-pattern <Badge text="1.5.2+" type="error"/>
+- 类型: `String[]`
+- 默认值：`[{"yyyy-MM-dd", "yyyy-MM-dd HH:mm:ss", "yyyyMMddHHmmss", "yyyyMMdd"}]`
+
+`magic-api.date-pattern` 请求参数支持的日期格式
 
 ## backup-config <Badge text="1.3.5+" type="error"/>
 ### resource-type
