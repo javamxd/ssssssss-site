@@ -27,7 +27,7 @@ sidebarDepth: 3
     },
     request: {
         beforeSend: function (config) {
-            console.log('请求设置', cofnig);
+            console.log('请求设置', config);
             return config;
         }
     ,
