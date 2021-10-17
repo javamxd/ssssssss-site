@@ -157,7 +157,7 @@
 - 非空字符串
 - `false`
 
-### 类型转换 <Badge text="0.7.0+" type="error"/>
+## 类型转换 <Badge text="0.7.0+" type="error"/>
 
 可使用`::type(defaultValue)` 的方式进行类型转换，如
 ```javascript
@@ -166,7 +166,7 @@ var b = "abc"::int(111); // 111
 var c = "2020-01-01"::date('yyyy-MM-dd'); // 转换为date
 ```
 
-### 可选链操作符
+## 可选链操作符
 可选链操作符(`?.`)允许读取位于连接对象链深处的属性的值，而不必明确验证链中的每个引用是否有效。`?.`操作符的功能类似于`.`链式操作符，不同之处在于，在引用为空 的情况下不会引起错误，该表达式短路返回值是 `null`。
 
 当尝试访问可能不存在的对象属性时，可选链操作符将会使表达式更短、更简明。在探索一个对象的内容时，如果不能确定哪些属性必定存在，可选链操作符也是很有帮助的。
@@ -182,7 +182,7 @@ var b = a?.name;    // b = null;
 var c = a?.getName();   // c = null;
 ```
 
-### 扩展运算符
+## 扩展运算符
 
 扩展运算符，又叫展开语法(Spread syntax)， 是用于将list或map在语法层面展开；
 
@@ -231,7 +231,7 @@ System.out.println({key1:1,...map,key3:3})
 
 当前for循环只支持两种，循环集合或Map
 
-#### 循环集合
+### 循环集合
 ```javascript
 import 'java.lang.System' as System;
 var list = [1,2,3];
@@ -246,7 +246,7 @@ for(index,item in list){    //如果不需要index，也可以写成for(item in 
 */
 ```
 
-#### 循环指定次数
+### 循环指定次数
 ```javascript
 var sum = 0;
 for(value in range(0,100)){    //包括0包括100
@@ -268,7 +268,7 @@ while(count){
 return sum; // 5050
 ```
 
-#### 循环map
+## 循环map
 ```javascript
 import 'java.lang.System' as System;
 var map = {

@@ -70,7 +70,7 @@ module.exports = {
 			},{
 				title : '高级应用',
 				collapsable: false,
-				children: ['linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect'].map(it => `guide/custom/${it}`)
+				children: ['linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect', 'crud-interceptor'].map(it => `guide/custom/${it}`)
 			},{
 				title : 'FAQ',
 				collapsable: false,

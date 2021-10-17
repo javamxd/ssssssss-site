@@ -24,6 +24,8 @@ magic-api:
   secret-key: 123456789 # 远程推送时的秘钥，未配置则不开启推送
   push-path: /_magic-api-sync #远程推送的路径，默认为/_magic-api-sync
   show-sql: true #配置打印SQL
+  compile-cache-size: 500 #配置编译缓存容量
+  persistence-response-body: true #是否持久化保存ResponseBody
   date-pattern: # 配置请求参数支持的日期格式
     - yyyy-MM-dd
     - yyyy-MM-dd HH:mm:ss
@@ -156,6 +158,18 @@ magic-api:
 - 默认值：`[{"yyyy-MM-dd", "yyyy-MM-dd HH:mm:ss", "yyyyMMddHHmmss", "yyyyMMdd"}]`
 
 `magic-api.date-pattern` 请求参数支持的日期格式
+
+## compile-cache-size <Badge text="1.5.3+" type="error"/>
+- 类型：`int`
+- 默认值：`500`
+
+`magic-api.compile-cache-size` 编译缓存容量
+
+## persistence-response-body <Badge text="1.5.3+" type="error"/>
+- 类型：`boolean`
+- 默认值：`true`
+
+`magic-api.persistence-response-body` 是否持久化保存`ResponseBody`
 
 ## backup-config <Badge text="1.3.5+" type="error"/>
 ### resource-type

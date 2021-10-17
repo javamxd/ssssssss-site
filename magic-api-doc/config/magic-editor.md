@@ -19,6 +19,7 @@ sidebarDepth: 3
     blockClose: true,   // 是否阻止离开页面      
     autoSave: true, 
     decorationTimeout: 10000,
+    logMaxRows: Infinity,
     header: {
         skin: true,
         document: true,
@@ -180,6 +181,10 @@ var MAGIC_EDITOR_CONFIG = {
 ## defaultTheme
 - 类型: `String`
 编辑器的默认皮肤，默认值为`default`，内置有`default`和`dark`
+
+## logMaxRows <Badge text="1.5.3+" type="error"/>
+- 类型：`Number`
+编辑器的日志最多保留条数，默认不限制
 
 ## autoSave <Badge text="1.0.0+" type="error"/>
 - 类型： `Boolean`
