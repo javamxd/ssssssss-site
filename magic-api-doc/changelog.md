@@ -4,6 +4,20 @@ sidebar: false
 
 # 更新日志
 
+## [v1.6.0] 2021.10.25
+- **新增`mybatis` `if`、`where`、`set`、`foreach`、`trim`等标签写法**
+- 新增`db.select(sqlOrXml,Map)`、`db.page(sqlOrXml,Map)`等方法，支持传入变量信息
+- 新增`new_array(String ... items)`、`new_array(int ... items)`等方法
+- 修复在配置`magic-api.response`后，参数验证未通过时出现的空指针异常
+- 修复`request`模块部分情况获取不到`HttpServletRequest`的问题
+- 修复进入断点后，取消断点无效的问题
+- 修复在调用`lambda`时，参数与形参个数不一致会产生异常的`BUG`
+- 修复异步调用函数时`context`可能混乱的问题
+- 修复在递归调用时，变量作用域发生混乱的问题
+- 修复`DEBUG`模式部分情况会编译失败的问题
+- 优化`?.`操作符，当找不到属性时直接返回`null`不在抛出异常
+- 优化在使用`::`转数值时，自动`trim`处理
+
 ## [v1.5.3] 2021.10.18
 - 新增支持编译缓存容量配置
 - 新增单表`API`操作拦截器
