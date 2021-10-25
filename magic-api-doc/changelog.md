@@ -4,6 +4,10 @@ sidebar: false
 
 # 更新日志
 
+## [v1.6.1] 2021.10.26
+- 修复设置参数类型无效的问题
+- 优化代码提示、悬浮提示、参数提示
+
 ## [v1.6.0] 2021.10.25
 - **新增`mybatis` `if`、`where`、`set`、`foreach`、`trim`等标签写法**
 - 新增`db.select(sqlOrXml,Map)`、`db.page(sqlOrXml,Map)`等方法，支持传入变量信息
