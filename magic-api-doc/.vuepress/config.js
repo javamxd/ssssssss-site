@@ -26,6 +26,9 @@ module.exports = {
 		}, {
 			text : '配置',
 			link : '/config/'
+		}, {
+			text : 'API',
+			link : '/script/module/customize'
 		},{
 			text : '源码',
 			items : [{
@@ -51,6 +54,25 @@ module.exports = {
 				collapsable: false,
 				children: ['','magic-editor']
 			}],
+			'/script/' : [{
+				title : '模块',
+				collapsable: false,
+				children: ['customize','db', 'redis', 'mongo', 'http', 'log',
+					'request', 'response',
+					'env', 'magic'].map(it => `module/${it}`)
+
+			},{
+				title : '函数',
+				collapsable: false,
+				children: ['customize', 'aggregation', 'date', 'string', 'array',
+					'math', 'other'].map(it => `function/${it}`)
+			},{
+				title : '扩展',
+				collapsable: false,
+				children: ['instroduction','customize', 'object', 'number', 'collection',
+					'date', 'map', 'class', 'pattern'].map(it => `extension/${it}`)
+			}
+			],
 			'/' : [{
 				title : '介绍',
 				collapsable: false,
@@ -58,15 +80,11 @@ module.exports = {
 			},{
 				title : '使用入门',
 				collapsable: false,
-				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'deploy'].map(it => `tutorials/${it}`)
+				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'clusterDeploy','deploy'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
 				children: ['login', 'operation', 'api'].map(it => `authorization/${it}`)
-			},{
-				title: '模块&函数&类型扩展',
-				collapsable: false,
-				children: ['module', 'function', 'extension'].map(it => `script/${it}`)
 			},{
 				title : '高级应用',
 				collapsable: false,
