@@ -24,7 +24,7 @@
 var sql = """
 select * from test_data
 	where 1 = 1
-	<if test='id != null'>
+	<if test="id != null">
         and id = #{id}
     </if>
 """
@@ -39,7 +39,7 @@ return db.select(sql)
 var sql = """
 select * from test_data
 <where>
-    <if test='id != null'>
+    <if test="id != null">
         and id = #{id}
     </if>
 </where>
@@ -67,10 +67,10 @@ return db.select(sql)
 var sql = """
 update test_data
     <set>
-    <if test='name != null'>
+    <if test="name != null">
     name = #{name}
     </if>
-	<if test='content != null'>
+	<if test="content != null">
     content = #{content}
     </if>
     </set>
@@ -83,7 +83,7 @@ return db.update(sql)
 
 来看看与 *set* 元素等价的自定义 *trim* 元素吧：
 
-```sql
+```xml
 <trim prefix="SET" suffixOverrides=",">
   ...
 </trim>
