@@ -225,7 +225,7 @@ var MAGIC_EDITOR_CONFIG = {
 
 ### qqGroup
 - 类型: `Boolean`
-显示控制皮肤按钮，默认值为`true`
+显示加入qq群按钮，默认值为`true`
 
 ## request
 - 类型: `Object`
