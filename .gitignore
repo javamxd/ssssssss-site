@@ -87,3 +87,4 @@ typings/
 package-lock.json
 .temp
 dist
+/.idea/

@@ -26,6 +26,9 @@ module.exports = {
 		}, {
 			text : '配置',
 			link : '/config/'
+		}, {
+			text : 'API',
+			link : '/script/module'
 		},{
 			text : '源码',
 			items : [{
@@ -51,6 +54,11 @@ module.exports = {
 				collapsable: false,
 				children: ['','magic-editor']
 			}],
+			'/script/' : [{
+				title : 'API',
+				collapsable: false,
+				children: ['module', 'function', 'extension']
+			}],
 			'/' : [{
 				title : '介绍',
 				collapsable: false,
@@ -58,15 +66,11 @@ module.exports = {
 			},{
 				title : '使用入门',
 				collapsable: false,
-				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'deploy'].map(it => `tutorials/${it}`)
+				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'cluster-deploy','deploy'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
 				children: ['login', 'operation', 'api'].map(it => `authorization/${it}`)
-			},{
-				title: '模块&函数&类型扩展',
-				collapsable: false,
-				children: ['module', 'function', 'extension'].map(it => `script/${it}`)
 			},{
 				title : '高级应用',
 				collapsable: false,
