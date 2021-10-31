@@ -4,7 +4,7 @@ sidebar: false
 
 # 更新日志
 
-## [v1.6.2] 2021.11.01
+## [v1.6.3] 2021.11.01
 - 新增脚本默认数据源的配置功能 [I47VQF](https://gitee.com/ssssssss-team/magic-api/issues/I47VQF)
 - 修复`LINQ`的`offset`设置错误
 - 修复在编辑器中下载`json`文件时会被识别成`json`结果的问题
