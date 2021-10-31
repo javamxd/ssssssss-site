@@ -4,6 +4,21 @@ sidebar: false
 
 # 更新日志
 
+## [v1.6.2] 2021.11.01
+- 新增脚本默认数据源的配置功能 [I47VQF](https://gitee.com/ssssssss-team/magic-api/issues/I47VQF)
+- 修复`LINQ`的`offset`设置错误
+- 修复在编辑器中下载`json`文件时会被识别成`json`结果的问题
+- 修复未在编辑器配置`json`结构时，请求携带`RequestBody`造成`body`为`null`的`BUG`
+- 修复`json`属性值类型修改后被还原问题
+- 修复`mybatis`的部分解析错误 [I4FHWA](https://gitee.com/ssssssss-team/magic-api/issues/I4FHWA) [I4FHT3](https://gitee.com/ssssssss-team/magic-api/issues/I4FHT3)
+- 优化`selectValue`方法，改为取第一行第一列
+- 优化`selectOne`方法，改为只取第一行
+- 优化分页`count`语句，去除`order by`
+- 优化代码提示，优化`import`提示
+- 优化错误提示，优化变量作用域读写
+- 优化编辑器的部分快捷键，修复部分快捷键冲突的问题
+- 升级`monaco-editor`至`0.29.1`
+
 ## [v1.6.1] 2021.10.26
 - 修复设置参数类型无效的问题
 - 优化代码提示、悬浮提示、参数提示
