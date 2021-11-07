@@ -4,6 +4,22 @@ sidebar: false
 
 # 更新日志
 
+## [v1.6.4] 2021.11.08
+- 新增测试时显示`Response Header`
+- 新增支持调用`map`中的`lambda`函数
+- 新增接口选项：`不接收未经定义的参`
+- 修复`lambda`调用自身时出现的作用域混乱的问题
+- 修复`Oracle`执行`insert`时出现的类型转换异常
+- 修复全局搜索部分情况会请求失败的问题
+- 优化编辑器字体样式，使用`JetBrains Mono`字体，支持连字
+- 优化`mybatis`的`<trim>`在部分情况时无法去除后缀的问题
+- 优化分页参数获取，改为配置成表达式，方便从`body`中获取
+- 优化拖拽目标节点能突出显示 [I48MQM](https://gitee.com/ssssssss-team/magic-api/issues/I48MQM)
+- 优化移动接口后定位混乱的问题
+- 优化模板字符串内的代码提示
+- 优化错误信息显示
+- 优化日志显示
+
 ## [v1.6.3] 2021.11.01
 - 新增脚本默认数据源的配置功能 [I47VQF](https://gitee.com/ssssssss-team/magic-api/issues/I47VQF)
 - 修复`LINQ`的`offset`设置错误

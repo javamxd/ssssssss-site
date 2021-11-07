@@ -7,7 +7,7 @@
 <dependency>
 	<groupId>org.ssssssss</groupId>
 	<artifactId>magic-api-spring-boot-starter</artifactId>
-    <version>magic-api-lastest-version</version>
+    <version>1.6.4</version>
 </dependency>
 ```
 
