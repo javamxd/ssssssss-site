@@ -4,6 +4,24 @@ sidebar: false
 
 # 更新日志
 
+## [v1.7.0] 2021.11.22
+- 新增支持`HEAD`、`PATCH`请求方法 [I4HSB7](https://gitee.com/ssssssss-team/magic-api/issues/I4HSB7)
+- 新增支持`import org.ssssssss.magicapi.IoUtils`的方式导包(去掉需要加引号的限制)
+- 新增`date_format`函数，支持`LocalDate`、`LocalDateTime`等类型
+- 新增`String.replace(pattern, replacement)`方法
+- 新增复制接口到其他目录下 [I47FV9](https://gitee.com/ssssssss-team/magic-api/issues/I47FV9)
+- 修复搜索结果部分情况高亮不正确的问题
+- 修复代码高亮部分情况不正确的`BUG`
+- 修复不兼容`spring boot 2.6.0`的问题
+- 修复`>`、`>=`、`<`、`<=`等运算符不支持`BigInteger`的问题
+- 修复`log`模块获取接口名失败时会出现异常的`BUG`
+- 优化`collection.group`的`map key`顺序
+- 优化代码提示、优化`import`提示，提示可自动导包
+- 优化页面加载速度(缩小`/magic/web/classes.txt`的大小)
+- 优化代码去除不必要的`ThreadLocal`
+- 优化代码编辑器选中样式，修复串位的问题
+
+
 ## [v1.6.4] 2021.11.08
 - 新增测试时显示`Response Header`
 - 新增支持调用`map`中的`lambda`函数
