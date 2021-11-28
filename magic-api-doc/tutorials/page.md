@@ -43,7 +43,7 @@ public class MyPageProvider implements PageProvider {
     *   此方法需要根据实际情况替换
     */
     @Override
-    public Page getPage(MagicScriptContext context) {
+    public Page getPage(RuntimeContext context) {
         long page = 1;
         long pageSize = 100;
         // 计算limit以及offset

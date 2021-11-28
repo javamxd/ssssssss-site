@@ -4,6 +4,11 @@ sidebar: false
 
 # 更新日志
 
+## [v1.7.1] 2021.11.29
+- 新增`http`模块的`exceptBytes`方法，用于返回`byte[]`数据
+- 修复并发情况下、`MagicScriptContext`会被共享的问题
+- 优化`header`获取，`key`不再区分大小写
+
 ## [v1.7.0] 2021.11.22
 - 新增支持`HEAD`、`PATCH`请求方法 [I4HSB7](https://gitee.com/ssssssss-team/magic-api/issues/I4HSB7)
 - 新增支持`import org.ssssssss.magicapi.IoUtils`的方式导包(去掉需要加引号的限制)
