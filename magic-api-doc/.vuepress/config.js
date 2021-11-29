@@ -74,13 +74,13 @@ module.exports = {
 			}
 			],
 			'/' : [{
-				title : '介绍',
+				title : '快速入门',
 				collapsable: false,
 				children: ['','guide/quick-start']
 			},{
 				title : '使用入门',
 				collapsable: false,
-				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'cluster-deploy','deploy'].map(it => `tutorials/${it}`)
+				children: ['images', 'core', 'grammar', 'datasource', 'json', 'exception', 'async','lambda', 'validate', 'java', 'doc', 'cluster-deploy','api-release'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
