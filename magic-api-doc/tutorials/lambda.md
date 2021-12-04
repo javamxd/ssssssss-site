@@ -1,7 +1,8 @@
-# 结果转换
+# Lambda
 
-## List转换
-```javascript
+## 映射(map)
+
+```js
 var list = [
     {sex : 0,name : '小明',age : 19},
     {sex : 1,name : '小花',age : 18}
@@ -13,13 +14,10 @@ return list.map((item)=>{
     sex : item.sex == 0 ? '男' : '女',
     name : item.name
 });
-// 以上代码可以使用Linq代替
-return 
-    select 
-        t.age > 18 ? '成人' : '未成年' age,
-        t.sex == 0 ? '男' : '女' sex,
-        t.name
-    from list t;
+
+```
+
+```js
 /*结果
 [{
     "sex": "男",
@@ -32,7 +30,21 @@ return
 }]
 */
 ```
-## List过滤
+
+
+
+​	等价于以下Linq代码。
+
+```javascript
+ return 
+    select 
+        t.age > 18 ? '成人' : '未成年' age,
+        t.sex == 0 ? '男' : '女' sex,
+        t.name
+    from list t;
+```
+## 过滤(filter)
+
 ```javascript
 var list = [
     {sex : 0,name : '小明'},
@@ -49,19 +61,20 @@ return select * from list t where t.sex = 0
 }]
 */
 ```
-## List过滤和转换
+## 过滤+映射(filter + map)
 ```javascript
 var list = [
     {sex : 0,name : '小明'},
     {sex : 1,name : '小花'}
 ]
-// 利用map函数对list进行过滤，然后进行转换
+// 对list进行过滤，然后进行映射
 return list.filter((item)=>item.sex == 0).map((item)=>{
     sex : item.sex == 0 ? '男' : '女',
     name : item.name
 });
-// 以上代码可以使用linq代替
-return select t.sex ==0 ? '男' : '女' sex ,t.name from list t where t.sex = 0
+```
+
+```js
 /* 结果
 [{
     "sex": "男",
@@ -70,7 +83,16 @@ return select t.sex ==0 ? '男' : '女' sex ,t.name from list t where t.sex = 0
 */
 ```
 
-## List分组
+​	等价于以下Linq代码。
+
+```js
+return select t.sex ==0 ? '男' : '女' sex ,t.name from list t where t.sex = 0
+```
+
+## 分组(group)
+
+​	默认聚合为List
+
 ```javascript
 // List<Map<String,Object>>
 var result = [
@@ -91,6 +113,10 @@ Map<Object,List<Object>>
     "2_2": [{"yyy": 2, "xxx": 2, "value": 33 }]
 }
 */
+```
+​	自定义聚合对象。
+
+```js
 
 return result.group(item=>item.xxx + '_' + item.yyy,list=>{
     count : list.size(),
@@ -105,7 +131,11 @@ Map<Object,Object>
 }
 */
 ```
-## List关联
+
+
+
+## 关联(join)
+
 ```javascript
 var year2019 = [
     { "pt":2019, "item_code":"code_1", "sum_price":2234 },
@@ -124,7 +154,20 @@ return year2019.join(year2018, (left,right)=>left.item_code == right.item_code, 
    '去年' : right == null ? 'unknow' : right.sum_price,
    '环比去年增长' : right == null ? '-': (((left.sum_price - right.sum_price) / right.sum_price * 100) + "%")
 });
-// 以上代码可以使用linq代替
+
+/*
+[
+    {"年份": 2019, "今年": 2234, "去年": 1234, "环比去年增长": "81.03728%", "编号": "code_1"},
+    {"年份": 2019, "今年": 234, "去年": "unknow", "环比去年增长": "-", "编号": "code_2"},
+    {"年份": 2019, "今年": 12340,"去年": "unknow","环比去年增长": "-","编号": "code_3"},
+    {"年份": 2019, "今年": 2344, "去年": 1234, "环比去年增长": "89.95138%", "编号": "code_4"}
+]
+*/
+```
+
+​	等价于以下Linq代码:
+
+```js
 return 
     select 
         t.pt 年份,
@@ -135,13 +178,5 @@ return
         t1.sum_price == null ? '-' : ((t.sum_price - t1.sum_price) / t1.sum_price).asPercent(2) 环比去年增长 
     from year2019 t
     left join year2018 t1 on t.item_code = t1.item_code
-/*
-[
-    {"年份": 2019, "今年": 2234, "去年": 1234, "环比去年增长": "81.03728%", "编号": "code_1"},
-    {"年份": 2019, "今年": 234, "去年": "unknow", "环比去年增长": "-", "编号": "code_2"},
-    {"年份": 2019, "今年": 12340,"去年": "unknow","环比去年增长": "-","编号": "code_3"},
-    {"年份": 2019, "今年": 2344, "去年": 1234, "环比去年增长": "89.95138%", "编号": "code_4"}
-]
-*/
 ```
 

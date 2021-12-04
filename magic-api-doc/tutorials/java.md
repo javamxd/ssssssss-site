@@ -1,7 +1,7 @@
-# 调用Java相关类
+# 调用Java程序
 
 
-## 调用Spring中的Bean
+## 注入Spring Bean
 
 ```groovy
 // 第一种方式

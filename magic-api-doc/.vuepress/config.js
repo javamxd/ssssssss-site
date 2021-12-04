@@ -78,7 +78,7 @@ module.exports = {
 				collapsable: false,
 				children: ['','guide/quick-start']
 			},{
-				title : '使用入门',
+				title : '核心功能',
 				collapsable: false,
 				children: ['images', 'core', 'grammar', 'datasource', 'json', 'exception', 'async','lambda', 'validate', 'java', 'doc', 'cluster-deploy','api-release'].map(it => `tutorials/${it}`)
 			},{

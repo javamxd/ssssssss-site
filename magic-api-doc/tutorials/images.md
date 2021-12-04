@@ -1,4 +1,4 @@
-# 界面说明
+# 界面简介
 
 ## 整体说明
 ![界面说明](../.vuepress/public/images/page_index_comment.png "界面说明")

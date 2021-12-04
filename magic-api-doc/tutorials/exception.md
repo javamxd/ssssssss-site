@@ -1,8 +1,8 @@
-# 异常统一处理
+# 统一异常处理
 
 ## 基于magic-api实现
 
-与自定义`JSON`统一结果一样，都需要实现`ResultProvider`
+​	通过覆盖`ResultProvider`的`buildException`实现全局异常处理。
 ```java
 @Component
 public class MyResultProvider implements ResultProvider {
