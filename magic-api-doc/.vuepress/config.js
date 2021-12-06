@@ -76,11 +76,12 @@ module.exports = {
 			'/' : [{
 				title : '快速入门',
 				collapsable: false,
-				children: ['','guide/quick-start']
+
+				children: ['','guide/quick-start', 'tutorials/param', 'tutorials/curd.md', 'tutorials/single-table-interface', 'tutorials/page']
 			},{
-				title : '核心功能',
+				title : '基础教程',
 				collapsable: false,
-				children: ['images', 'core', 'grammar', 'datasource', 'json', 'exception', 'async','lambda', 'validate', 'java', 'doc', 'cluster-deploy','api-release'].map(it => `tutorials/${it}`)
+				children: ['images', 'grammar', 'datasource', 'json', 'exception', 'validate', 'java', 'doc'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
@@ -88,7 +89,7 @@ module.exports = {
 			},{
 				title : '高级应用',
 				collapsable: false,
-				children: ['linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect', 'crud-interceptor'].map(it => `guide/custom/${it}`)
+				children: ['async', 'cluster-deploy','api-release', 'lambda', 'linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect', 'crud-interceptor'].map(it => `guide/custom/${it}`)
 			},{
 				title : 'FAQ',
 				collapsable: false,

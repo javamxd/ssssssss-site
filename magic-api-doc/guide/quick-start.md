@@ -120,7 +120,7 @@ spring:
 
   在编辑器输入内容后，填写接口名称和及其路径。
 
-```
+```js
 var sql = """
 select * from test_data
 """
@@ -161,7 +161,7 @@ return db.select(sql)
 
 ## 小结
 
-​	通过以上几个步骤，我们就实现了一个简单的查询功能。省去了Controller、Service、Dao、Mapper、XML、VO等模板代码的工作量。
+​	通过以上几个步骤，我们就实现了一个简单的查询功能。省去了`Controller`、`Service`、`Dao`、`Mapper`、`XML`、`VO`等模板代码的工作量。
 
-​	想要了解更多magic-api的功能？请接着往下看。
+​	想要了解更多`magic-api`的功能？请接着往下看。
 
