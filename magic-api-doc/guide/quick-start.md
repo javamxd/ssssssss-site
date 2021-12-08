@@ -73,6 +73,10 @@ INSERT INTO test_data (id, name) VALUES (2, 'xiaoDong');
     <scope>test</scope>
 </dependency>
 <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+<dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.27</version>
