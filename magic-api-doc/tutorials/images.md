@@ -1,4 +1,4 @@
-# 界面说明
+# 界面简介
 
 ## 整体说明
 ![界面说明](../.vuepress/public/images/page_index_comment.png "界面说明")
@@ -10,3 +10,4 @@
 ![ResponseBody](../.vuepress/public/images/api_info_response_body.png "ResponseBody")
 ## DEBUG
 ![DEBUG](../.vuepress/public/images/debug_comment.png "DEBUG")
+

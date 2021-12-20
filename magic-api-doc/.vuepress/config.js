@@ -74,13 +74,14 @@ module.exports = {
 			}
 			],
 			'/' : [{
-				title : '介绍',
+				title : '快速入门',
 				collapsable: false,
-				children: ['','guide/quick-start']
+
+				children: ['','guide/quick-start', 'tutorials/param', 'tutorials/curd.md', 'tutorials/single-table-interface', 'tutorials/page']
 			},{
-				title : '使用入门',
+				title : '基础教程',
 				collapsable: false,
-				children: ['images', 'grammar', 'parameter', 'datasource', 'crud', 'json', 'exception', 'page', 'async','convert', 'validate', 'java', 'doc', 'cluster-deploy','deploy'].map(it => `tutorials/${it}`)
+				children: ['images', 'grammar', 'datasource', 'json', 'exception', 'validate', 'java', 'doc'].map(it => `tutorials/${it}`)
 			},{
 				title : '权限配置',
 				collapsable: false,
@@ -88,7 +89,7 @@ module.exports = {
 			},{
 				title : '高级应用',
 				collapsable: false,
-				children: ['linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect', 'crud-interceptor'].map(it => `guide/custom/${it}`)
+				children: ['async', 'cluster-deploy','api-release', 'lambda', 'linq', 'interceptor', 'cache', 'resource',  'sql', 'column','language', 'dialect', 'crud-interceptor'].map(it => `guide/custom/${it}`)
 			},{
 				title : 'FAQ',
 				collapsable: false,

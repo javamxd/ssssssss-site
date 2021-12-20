@@ -1,7 +1,9 @@
-# 调用Java相关类
+# 调用Java
+
+> 1.7.0 之后, import可不加引号。
 
 
-## 调用Spring中的Bean
+## 注入Spring Bean
 
 ```groovy
 // 第一种方式

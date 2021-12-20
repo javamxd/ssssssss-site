@@ -1,6 +1,6 @@
 # 异步调用
 
-## 调用普通方法
+## 普通方法
 ```javascript    
 // 使用async关键字，会启动一个线程去执行，返回Future，并不等待结果继续执行后续代码
 var user1 = async db.select("select * from sys_user where id = 1");
@@ -9,7 +9,7 @@ var user2 = async db.select("select * from sys_user where id = 2");
 return [user1.get(),user2.get()];
 ```
 
-## 调用lambda
+## lambda
 ```javascript
 var list = [];
 /*

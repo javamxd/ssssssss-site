@@ -1,5 +1,14 @@
-# 分页查询
+# 分页
+## 分页参数配置
 
+```yml
+magic-api:
+  page-config:
+    size: size # 页大小的请求参数名称
+    page: page # 页码的请求参数名称
+    default-page: 1 # 未传页码时的默认首页
+    default-size: 10 # 未传页大小时的默认页大小
+```
 
 ## 自动分页
 
@@ -19,15 +28,6 @@ return db.page("""
 """, 10, 20) //跳过前20条查10条
 ```
 
-## 分页参数配置
-```yml
-magic-api:
-  page-config:
-    size: size # 页大小的请求参数名称
-    page: page # 页码的请求参数名称
-    default-page: 1 # 未传页码时的默认首页
-    default-size: 10 # 未传页大小时的默认页大小
-```
 ## 自定义分页参数获取
 
 对于分页参数不在请求参数中的使用此方法配置，使用此方法配置后，分页参数配置将失效。
@@ -56,3 +56,4 @@ public class MyPageProvider implements PageProvider {
 ## 自定义分页JSON结果
 
 参考 [自定义JSON结果](./json.html#自定义结构配置)
+

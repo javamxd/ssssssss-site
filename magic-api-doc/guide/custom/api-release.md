@@ -1,13 +1,13 @@
-# 部署
+# 接口发布
 
 
 ## 导出&上传
 
 在**本地环境**中，写好接口后，可以通过导出，在到**生产环境**中通过上传的方式进行部署
 
-![导出](../.vuepress/public/images/export.png "导出")
+![导出](../../.vuepress/public/images/export.png "导出")
 
-![上传](../.vuepress/public/images/upload.png "上传")
+![上传](../../.vuepress/public/images/upload.png "上传")
 
 - **增量上传** 此模式上传仅仅针对上传的资源中进行更新，不会对接口进行删除操作。
 - **全量上传** 此模式以上传内容为基准，全量覆盖更新，如果没有必要不建议进行此操作。
@@ -56,7 +56,7 @@ magic-api:
 - 推送的目标不是只读模式
 - 从本地能连通至目标服务
 
-![推送](../.vuepress/public/images/push.png "推送")
+![推送](../../.vuepress/public/images/push.png "推送")
 
 ## 本地和远程使用同一个存储
 ### 前置条件
