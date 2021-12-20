@@ -8,7 +8,7 @@
 ```yml
 spring:
   data:
-    # 集成spring-boot-starter-data-redis
+    # 集成spring-boot-starter-data-redis 高版本为spring
     redis:
       host: 192.168.30.9
       port: 6379
@@ -79,3 +79,4 @@ public class CustomMagicNotifyConfiguration{
     }
 }
 ```
+
