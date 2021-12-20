@@ -189,3 +189,21 @@ location /magic/web/console {
     proxy_read_timeout 900s;
 }
 ```
+
+## 保存图片(Blob)数据到数据库
+
+​	假设将图片的二进制数据传输到body.img中, sql可以这么写
+
+```js
+var sql = """
+	insert into img_table(
+    	img 
+    )
+	values(
+    	#{img::sql('blob')}
+    )
+""";
+```
+
+​	`::sql`用法参考 [类型转换](../tutorials/grammar.html#类型转换-2)
+

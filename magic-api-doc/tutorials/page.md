@@ -22,7 +22,7 @@ return db.page("""
 ## 手动分页
 
 ```groovy
-// 自动从请求参数中获取页码、页大小
+
 return db.page("""
     select * from sys_user
 """, 10, 20) //跳过前20条查10条

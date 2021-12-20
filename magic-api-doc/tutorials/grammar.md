@@ -360,7 +360,16 @@ return {
 }
 ```
 
+​	`::sql`支持将数据转换为对应的sql类型， 比如：
+
+```js
+img::sql('blob')
+```
+
+​	可传入的参数请参考`java.sql.Types`中定义的常量，不区分大小写。
+
 ## 嵌入其它脚本语言 <Badge text="1.0.0+" type="error"/>
+
 ```js
 var name = "hello";
 var test = ```javascript
