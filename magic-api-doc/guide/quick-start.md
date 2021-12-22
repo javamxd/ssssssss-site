@@ -41,7 +41,7 @@ INSERT INTO test_data (id, name) VALUES (2, 'xiaoDong');
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>spring-latest-version</version>
+    <version>spring-boot-latest-version</version>
     <relativePath/>
 </parent>
 ```
@@ -52,7 +52,7 @@ INSERT INTO test_data (id, name) VALUES (2, 'xiaoDong');
 <dependency>
     <groupId>org.ssssssss</groupId>
     <artifactId>magic-api-spring-boot-starter</artifactId>
-    <version>1.7.1</version>
+    <version>magic-api-lastest-version</version>
 </dependency>
 ```
 

@@ -3,7 +3,8 @@ module.exports = {
 	description: '一个接口快速开发框架',
 	head: [
 		["link", {rel: "icon", href: '/favicon.ico'}],
-		["script", { "crossorigin": "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9417757127794923" }]
+		// ["script", { "crossorigin": "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9417757127794923" }],
+		["script", { async: true, src: "https://cdn.wwads.cn/js/makemoney.js" }],
 	],
 	markdown:{
 		lineNumbers : true
@@ -95,7 +96,7 @@ module.exports = {
 				collapsable: false,
 				children: ['guide/faq']
 			}]
-		}
+		},
     },
 	plugins : [
 		[require('./plugins/stat')],
@@ -104,6 +105,10 @@ module.exports = {
 				keywords: 'magic-api-lastest-version',
 				type: "maven",
 				repo: "org.ssssssss/magic-api",
+			},{
+				keywords: 'spring-boot-latest-version',
+				type: "maven",
+				repo: "org.springframework.boot/spring-boot-starter-parent",
 			}]
 		}],
 		['fulltext-search'],
