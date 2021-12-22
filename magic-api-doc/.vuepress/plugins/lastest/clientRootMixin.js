@@ -14,7 +14,7 @@ export default {
           setTimeout(() => {
             var elements = this.$el.getElementsByClassName("content__default");
             if (elements !== undefined) {
-              elements.forEach((element) => {
+              Array.from(elements).forEach((element) => {
                 var content = element.innerHTML;
                 repos.forEach((repoConfig) => {
                   let keywords = repoConfig.keywords;
