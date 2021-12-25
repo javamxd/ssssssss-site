@@ -96,7 +96,7 @@ public class PermissionInterceptor implements RequestInterceptor {
 
 
 ## ${}和#{}的区别
-主要区别在于`${}`用于拼接SQL(会产生SQL注入问题)，`#{}`会替换成占位符（不会产生SQL注入问题），这里的区别于`Mybatis`一致
+主要区别在于`${}`用于拼接SQL(会产生SQL注入问题)，`#{}`会替换成占位符（不会产生SQL注入问题），这里的区别与`Mybatis`一致
 
 ## 如何循环拼接参数
 两种办法：
