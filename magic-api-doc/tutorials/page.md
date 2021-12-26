@@ -1,32 +1,50 @@
 # 分页
-## 分页参数配置
 
-```yml
-magic-api:
-  page-config:
-    size: size # 页大小的请求参数名称
-    page: page # 页码的请求参数名称
-    default-page: 1 # 未传页码时的默认首页
-    default-size: 10 # 未传页大小时的默认页大小
-```
+  在magic-api中, 可以通过配置自定义分页接收参数或者结果。
 
-## 自动分页
+## 如何分页?
+
+### 自动分页
 
 ```groovy
-// 自动从请求参数中获取页码、页大小
+// 自动从请求参数中获取页码(默认为page)、页大小(默认为size)
 return db.page("""
     select * from sys_user
 """)
 ```
 
-## 手动分页
+### 手动分页
+
+可手动传入分页参数。
 
 ```groovy
-
 return db.page("""
     select * from sys_user
-""", 10, 20) //跳过前20条查10条
+""", 10, 20) // 跳过前20条查10条(limit, offset)
 ```
+
+## 自定义分页参数
+
+可根据需要在自己的项目中，调整以下分页参数。
+
+```yml
+magic-api:
+  page-config:
+    size: size # 页大小的请求参数名称 缺省时为size
+    page: page # 页码的请求参数名称 缺省时为page
+    default-page: 1 # 自定义默认首页 缺省时为1
+    default-size: 10 # 自定义为默认页大小 缺省时为10
+```
+
+## 自定义分页JSON结果
+
+默认分页结果返回值如下:
+
+![](https://pic.imgdb.cn/item/61c723f52ab3f51d91f8bdda.jpg)
+
+如需调整请参考 [自定义JSON结果](./json.html#自定义结构配置)
+
+
 
 ## 自定义分页参数获取
 
@@ -44,16 +62,15 @@ public class MyPageProvider implements PageProvider {
     */
     @Override
     public Page getPage(RuntimeContext context) {
-        long page = 1;
-        long pageSize = 100;
+        long page = NumberUtils.toLong(
+                Objects.toString(context.eval("page"), (String)null), 1);
+        long pageSize = NumberUtils.toLong(
+                Objects.toString(context.eval("size"), (String)null), 20);
         // 计算limit以及offset
         return new Page(pageSize, (page - 1) * pageSize);
-
     }
 }
 ```
 
-## 自定义分页JSON结果
 
-参考 [自定义JSON结果](./json.html#自定义结构配置)
 
