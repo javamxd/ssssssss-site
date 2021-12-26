@@ -4,6 +4,22 @@ sidebar: false
 
 # 更新日志
 
+## [v1.7.2] 2021.12.27
+- 新增数组&集合去重函数`distinct(e->e.x)`
+- 新增`SQL`后置拦截器 [I4NU79](https://gitee.com/ssssssss-team/magic-api/issues/I4NU79)
+- 新增`Class`扩展方法`getName`、`getSimpleName`、`getCanonicalName`
+- 新增`Map`到`Bson`的隐式转换，方便调用`mongo`相关`API`
+- 修复日志组件溢出时未显示滚动条的问题
+- 修复请求体`JSON`属性值类型修改后被还原的问题 [I4N708](https://gitee.com/ssssssss-team/magic-api/issues/I4N708)
+- 修复部分运算符优先级不正确的问题
+- 修复`linq` 多个`left join`结果不正确的`BUG`
+- 修复`::date`未传参数时错误信息不提示的问题
+- 修复`...`扩展运算符不支持数组的问题
+- 优化正则表达式匹配规则，解决部分情况语句解析不正确的问题
+- 优化执行结果显示，保持`JSON`原样输出
+- 优化代码提示，解决部分场景无法提示的问题，优化部分代码提示高亮
+
+
 ## [v1.7.1] 2021.11.29
 - 新增`http`模块的`exceptBytes`方法，用于返回`byte[]`数据
 - 修复并发情况下、`MagicScriptContext`会被共享的问题

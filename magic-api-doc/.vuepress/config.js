@@ -31,17 +31,20 @@ module.exports = {
 			text : 'API',
 			link : '/script/module/customize'
 		},{
-			text : '源码',
+			text : '源码&演示',
 			items : [{
 				text : 'Gitee',
 				link : 'https://gitee.com/ssssssss-team/magic-api'
 			},{
 				text : 'Github',
 				link : 'https://github.com/ssssssss-team/magic-api'
+			},{
+				text : '演示地址',
+				link : 'https://magic-api.ssssssss.org'
 			}]
 		},{
-			text : '演示地址',
-			link : 'https://magic-api.ssssssss.org'
+			text : '赞助',
+			link : '/guide/donate'
 		},{
 			text : '更新日志',
 			link : '/changelog'
@@ -94,7 +97,7 @@ module.exports = {
 			},{
 				title : 'FAQ',
 				collapsable: false,
-				children: ['guide/faq']
+				children: ['guide/faq', 'guide/donate']
 			}]
 		},
     },
