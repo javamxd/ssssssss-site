@@ -8,12 +8,19 @@ subSidebar: false
 ### 友情赞助
 
 您可以在项目 [Gitee主页](https://gitee.com/ssssssss-team/magic-api) 进行捐赠
-![](../.vuepress/public/images/donate_gitee.png)
+![Gitee](../.vuepress/public/images/donate_gitee.png)
+
+除此之外，也可以选择扫码捐赠
+
+| 支付宝 | QQ |
+| ----- | --- |
+| ![支付宝支付](../.vuepress/public/images/donate_qrcode_alipay.png)  | ![QQ支付](../.vuepress/public/images/donate_qrcode_qq.png)  |
 
 ### 捐赠列表
 
 | 金额 |来源 |赞助人  | 留言 | 时间 |
 | ---- |----|-------|------|------|
+| ¥ 99.99 | Gitee | [YuePeng](https://gitee.com/erupt) | 祝Magic-API越来越受欢迎，成为大众认可的主流开发形式 | 2021-12-26 |
 | ¥ 20.0 | 支付宝 | **德 | 嘿嘿嘿，一杯瑞幸 | 2021-11-12 |
 | ¥ 66.0 | 支付宝 | **虎 | - | 2021-11-12 |
 | ¥ 66.66 | 支付宝 | *辉 | - | 2021-11-12 |
