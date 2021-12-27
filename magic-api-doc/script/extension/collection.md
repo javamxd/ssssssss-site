@@ -312,3 +312,25 @@ return vals.limit(3); // [1,2,3]
 var vals = [null,null,3,null];
 return vals.findNotNull(); // 3
 ```
+
+## distinct() 去重<Badge text="1.6.2+" type="error"/>
+
+- 返回值：`Object`
+- 函数说明：去掉重复元素。
+
+```js
+var arr = [1, 2, 2, 3];
+return arr.distinct(); // [1, 2, 3]
+```
+
+## distnct(func) 根据函数返回值去重<Badge text="1.7.2+" type="error"/>
+
+- 入参: 映射函数, 形如`e -> e.id`。
+- 返回值：`Object`
+- 函数说明：根据函数返回值重复，去掉重复元素。
+
+```js
+var arr = [{id: 1, name: "xiaodong"}, {id:1, name: "magic-api"}];
+return arr.distinct(e -> e.id); // [{id: 1, name: "xiaodong"}]
+```
+
