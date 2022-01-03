@@ -4,6 +4,18 @@ sidebar: false
 
 # 更新日志
 
+## [v1.7.3] 2022.01.04
+- 新增`mybatis`语法的`<`和`>`自动转义
+- 修复在使用 `ResultProvider` 时识别方法签名不正确的问题
+- 修复前端语法解析错误 [I4OGMK](https://gitee.com/ssssssss-team/magic-api/issues/I4OGMK)
+- 修复单表`save`时主键`primaryValue`获取不到的问题 [PR39](https://gitee.com/ssssssss-team/magic-api/pulls/39)
+- 修复无法给数组赋值的`BUG`
+- 修复查询历史记录时可能未释放数据库连接的问题
+- 修复重命名分组后上传或推送可能会出现同名分组的`BUG`
+- 修复`linq` 多个`left join`结果不正确的`BUG`
+- 修复`magic-script`部分情况不兼容`log4j`的问题
+- 优化`mybatis`语法和`?{}`不兼容的问题
+
 ## [v1.7.2] 2021.12.27
 - 新增数组&集合去重函数`distinct(e->e.x)`
 - 新增`SQL`后置拦截器 [I4NU79](https://gitee.com/ssssssss-team/magic-api/issues/I4NU79)
@@ -27,7 +39,7 @@ sidebar: false
 
 ## [v1.7.0] 2021.11.22
 - 新增支持`HEAD`、`PATCH`请求方法 [I4HSB7](https://gitee.com/ssssssss-team/magic-api/issues/I4HSB7)
-- 新增支持`import org.ssssssss.magicapi.IoUtils`的方式导包(去掉需要加引号的限制)
+- 新增支持`import orgssssssss.magicapi.IoUtils`的方式导包(去掉需要加引号的限制)
 - 新增`date_format`函数，支持`LocalDate`、`LocalDateTime`等类型
 - 新增`String.replace(pattern, replacement)`方法
 - 新增复制接口到其他目录下 [I47FV9](https://gitee.com/ssssssss-team/magic-api/issues/I47FV9)
