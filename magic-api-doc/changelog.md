@@ -4,7 +4,7 @@ sidebar: false
 
 # 更新日志
 
-## [v1.7.3] 2022.01.04
+## [v1.7.4] 2022.01.04
 - 新增`mybatis`语法的`<`和`>`自动转义
 - 修复在使用 `ResultProvider` 时识别方法签名不正确的问题
 - 修复前端语法解析错误 [I4OGMK](https://gitee.com/ssssssss-team/magic-api/issues/I4OGMK)
