@@ -27,7 +27,7 @@ sidebar: false
 - 支持定时任务在线配置
 - 备份机制重构，支持自动全量备份并从全量备份中还原。
 - **移除`assert`模块，改用`assert`语法，正在使用`assert`模块的，强烈建议改为`assert`语法，方便后续升级**
-- `Elastsearch`模块(开发中)
+- `ElasticSearch`模块(开发中)
 - 解构语法(开发中)
 
 需要体验的可以在[Gitee](https://gitee.com/ssssssss-team/magic-api) 下载源码，自行编译`2.x`分支引入使用。
