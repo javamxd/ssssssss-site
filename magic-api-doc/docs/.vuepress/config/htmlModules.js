@@ -21,7 +21,10 @@
 
 module.exports = {
   // 谷歌广告
-  pageB: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9417757127794923" data-ad-slot="6763307871" data-ad-format="auto" data-full-width-responsive="true"></ins>`,
+  pageB: `
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9417757127794923" data-ad-slot="6763307871" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(window.adsbygoogle = window.adsbygoogle || []).push({})</script>
+  `,
   windowRB: `
     <div class="wwads-cn wwads-vertical windowRB" data-id="114" style="max-width:160px;min-width: auto;min-height:auto;"></div>
     <style>
