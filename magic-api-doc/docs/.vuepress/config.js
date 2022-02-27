@@ -13,7 +13,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
     ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
-    ["script", { "crossorigin": "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9417757127794923" }]
+    ["script", { "crossorigin": "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9417757127794923", onload: '(window.adsbygoogle = window.adsbygoogle || []).push({})' }]
   ],
 
   // 主题配置
@@ -33,13 +33,13 @@ module.exports = {
           { text: '模块', link: '/pages/module/db/' },
           { text: '函数', link: '/pages/function/aggregation/' },
           { text: '扩展', link: '/pages/extension/object/' }
-        ] 
+        ]
       },
       { text: '资源', items: [
           { text: 'Gitee', link: 'https://gitee.com/ssssssss-team/magic-api' },
           { text: 'Github', link: 'https://github.com/ssssssss-team/magic-api' },
           { text: '演示', link: 'https://magic-api.ssssssss.org/' }
-        ] 
+        ]
       },
       {
         text: '配置', items: [
