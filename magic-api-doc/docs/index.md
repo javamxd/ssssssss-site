@@ -93,7 +93,7 @@ data:
 <br/>
 
 <p align="center">
-  <a class="become-sponsor" href="/pages/sponsor/">支持这个项目</a>
+  <a class="become-sponsor" href="/magic-api/pages/sponsor/">支持这个项目</a>
   <a class="become-sponsor" href="https://gitee.com/ssssssss-team/magic-api/issues/I4RN7F">使用登记</a>
 </p>
 

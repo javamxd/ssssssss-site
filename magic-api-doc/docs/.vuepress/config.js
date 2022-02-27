@@ -13,6 +13,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
     ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+    ['script', { src: '/magic-api/magic-api.js', type: 'text/javascript' }],
     ["script", { 'data-ad-client': 'ca-pub-9417757127794923', async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" }]
   ],
 
