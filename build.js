@@ -3,7 +3,7 @@ const fs = require('fs');
 const process = require('child_process');
 const target = './dist';
 const docs = [
-	['magic-api-doc', '.vuepress/dist/', 'magic-api'],
+	['magic-api-doc', 'docs/.vuepress/dist/', 'magic-api'],
 	['magic-page-designer-doc', 'docs/.vuepress/dist/', 'magic-page-designer']
 ]
 const isExist = (path) => { // 判断文件夹是否存在, 不存在创建一个
@@ -22,9 +22,9 @@ const copyFile = (sourcePath, targetPath) => {
       isExist(newTargetPath)
       copyFile(newSourcePath, newTargetPath)
     }else{
-      fs.copyFileSync(newSourcePath, newTargetPath)	
+      fs.copyFileSync(newSourcePath, newTargetPath)
 	}
-     
+
   })
 }
 docs.forEach(entry => {
