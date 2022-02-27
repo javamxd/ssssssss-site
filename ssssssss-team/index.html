@@ -64,7 +64,7 @@
                       <a href="https://gitee.com/ssssssss-team/magic-api" class="btn-1">
                         仓库
                       </a>
-                      <a href="magic-api" class="btn-2">
+                      <a href="magic-api/" class="btn-2">
                         文档
                       </a>
                     </div>
@@ -184,7 +184,7 @@
               </p>
 			  <div class="badge-box" data-project="magic-api">
 				<a href="https://gitee.com/ssssssss-team/magic-api"><i class="fa fa-github"></i>代码仓库</a>
-				<a href="magic-api"><i class="fa fa-book" aria-hidden="true"></i>项目文档</a>
+				<a href="magic-api/"><i class="fa fa-book" aria-hidden="true"></i>项目文档</a>
 				<a href="https://gitee.com/ssssssss-team/magic-api"><i class="fa fa-star-o"></i><span>9999</span></a>
 				<a href="https://gitee.com/ssssssss-team/magic-api"><i class="fa fa-code-fork"></i><span>9999</span></a>
 			  </div>
@@ -321,21 +321,21 @@
     </div>
   </footer>
   <!-- footer section -->
-  
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
   <script src="https://s4.cnzz.com/z_stat.php?id=1280031557&web_id=1280031557"></script>
   <script>
-	console.log(`%c  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  
-888        888        888        888        888        888        888        888         
- 888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  
-        888        888        888        888        888        888        888        888 
+	console.log(`%c  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8  oooooooo8
+888        888        888        888        888        888        888        888
+ 888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo  888oooooo
+        888        888        888        888        888        888        888        888
 o88oooo888 o88oooo888 o88oooo888 o88oooo888 o88oooo888 o88oooo888 o88oooo888 o88oooo888  `,'color:#FE744F;font-weight:bolder')
 	fetch('https://gitee.com/api/v5/orgs/ssssssss-team/repos?per_page=100').then(res => res.json().then(data => data.forEach(item => {
 		$(`div[data-project=${item.name}] i.fa-star-o + span`).html(item.stargazers_count);
 		$(`div[data-project=${item.name}] i.fa-code-fork + span`).html(item.forks_count);
 	})))
-	
+
   </script>
 
 </body>

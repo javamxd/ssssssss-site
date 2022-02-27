@@ -33,55 +33,55 @@ config:
 data:
   - name: 广州天势网络
     desc: 社交系统开发
-    avatar: images/logos/redsns.png # 可选
+    avatar: /images/logos/redsns.png # 可选
     link: https://redsns.cn # 可选
     bgColor: '#f1f1f1' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
     textColor: '#2a3344' # 可选，默认var(--textColor)
   - name: 重庆昂码信息科技有限公司
     desc: '用于客户EBS系统与其他系统的接口服务'
-    avatar: images/logos/angma.png
+    avatar: /images/logos/angma.png
     link: http://www.angma.top
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 重庆润木科技有限公司
     desc: 后台接口编写
-    avatar: images/logos/runmukj.png
+    avatar: /images/logos/runmukj.png
     link: https://www.runmukj.com
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 北京北科智慧科技有限公司
     desc: 对接第三方系统、普通后台接口
-    avatar: images/logos/bksti.png
+    avatar: /images/logos/bksti.png
     link: http://www.bksti.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 长沙轻翼网络科技有限公司
     desc: 后台接口编写、系统集成
-    avatar: images/logos/liteasy.png
+    avatar: /images/logos/liteasy.png
     link: http://www.liteasy.cn
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 高合汽车服务有限公司
     desc: 后台接口编写
-    avatar: images/logos/hiphi.png
+    avatar: /images/logos/hiphi.png
     link: https://www.hiphi.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 准时达国际供应链管理有限公司
     desc: 数仓ADS层API开发
-    avatar: images/logos/jusda.png
+    avatar: /images/logos/jusda.png
     link: https://www.jusdaglobal.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: Erupt Framework
     desc: 注解·低代码 构建通用数据平台
-    avatar: images/logos/erupt.svg
+    avatar: /images/logos/erupt.svg
     link: https://www.erupt.xyz/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 郑州华视美达信息技术有限公司
     desc: 酒店住宿的pms对接
-    avatar: images/logos/hsmd.jpg
+    avatar: /images/logos/hsmd.jpg
     link: http://www.hassmedia.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
