@@ -122,7 +122,7 @@ data:
 或者加入我们的QQ交流群：
 
 ::: center
-<img src="images/qq-group-qrcode.png" alt="群号: 739235910" class="no-zoom" style="width:200px;">
+<img src="/magic-api/images/qq-group-qrcode.png" alt="群号: 739235910" class="no-zoom" style="width:200px;">
 
 #### magic-api官方QQ群: <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Q6dLmVS8cHwoaaP18A3tteK_o0244e6B&jump_from=webapi" target="_blank">739235910</a>
 :::
