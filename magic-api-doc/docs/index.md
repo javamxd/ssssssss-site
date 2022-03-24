@@ -87,8 +87,8 @@ data:
     textColor: '#2a3344'
   - name: faasadmin
     desc: 后台接口编写
-    avatar: /images/logos/faasadmin
-    link: http://www.hassmedia.com/
+    avatar: /images/logos/faasadmin.png
+    link: http://www.faasadmin.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
 ```
