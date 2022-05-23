@@ -27,6 +27,12 @@ module.exports = {
       //     { text: '前端配置', link: '/pages/config/editor/' },
       //   ]
       // },
+      { text: '资源', items: [
+          { text: 'Gitee', link: 'https://gitee.com/ssssssss-team/magic-boot' },
+          { text: '后台演示', link: 'https://magic-boot.ssssssss.org.cn/magic/web/index.html' },
+          { text: '前台演示', link: 'https://magic-boot-ui.ssssssss.org.cn/' }
+        ]
+      },
       { text: '常见问题', link: '/pages/faq/' },
       { text: 'QQ群(576433387)', link: 'https://jq.qq.com/?_wv=1027&k=KD6DPvB0' }
     ],
