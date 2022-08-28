@@ -105,7 +105,7 @@ data:
     textColor: '#2a3344'
   - name: 维视腾科技(上海)有限公司
     desc: 后台接口开发
-    avatar: /images/logos/wst.svg
+    avatar: /images/logos/wst.png
     link: https://www.wisdomsh.com.cn/#/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
