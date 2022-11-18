@@ -97,6 +97,24 @@ data:
     link: http://www.faasadmin.com/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
+  - name: 南京观为智慧软件科技有限公司
+    desc: 后台接口开发
+    avatar: /images/logos/njgwzh.png
+    link: http://www.gwwisdom.com/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 维视腾科技(上海)有限公司
+    desc: 后台接口开发
+    avatar: /images/logos/wst.png
+    link: https://www.wisdomsh.com.cn/#/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 北京信创达科技有限公司
+    desc: 医疗信息化系统
+    avatar: /images/logos/xcd.jpg
+    link: https://www.dfiia.net
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'  
 ```
 :::
 <style>
