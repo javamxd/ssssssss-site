@@ -56,7 +56,7 @@ module.exports = {
       },
       { text: '常见问题', link: '/pages/faq/' },
       { text: '💖支持', link: '/pages/sponsor/' },
-      { text: 'QQ群(739235910)', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=Q6dLmVS8cHwoaaP18A3tteK_o0244e6B&jump_from=webapi' }
+      { text: 'QQ群(700818216)', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi' }
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/images/logo-magic-api.png', // 导航栏logo
