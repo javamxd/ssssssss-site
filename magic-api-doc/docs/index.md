@@ -114,7 +114,19 @@ data:
     avatar: /images/logos/xcd.jpg
     link: https://www.dfiia.net
     bgColor: '#f1f1f1'
-    textColor: '#2a3344'  
+    textColor: '#2a3344'
+  - name: 上海泺冉信息技术有限公司
+    desc: 交通重货双碳平台
+    avatar: /images/logos/luoran.png
+    link: http://www.luoran.net/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 北京创金启富科技公司
+    desc: 投研系统开发
+    avatar: /images/logos/cjqf.png
+    link: https://www.5irich.com/#/home
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
 ```
 :::
 <style>
@@ -149,12 +161,13 @@ data:
 在使用过程中有任何问题和想法，请给我们提 [Gitee Issue](https://gitee.com/ssssssss-team/magic-api/issues)、[Github Issue](https://github.com/ssssssss-team/magic-api/issues)。
 你也可以在`Issue`查看别人提的问题和给出解决方案。
 
-或者加入我们的QQ交流群：
+或者加入我们的交流群：
 
 ::: center
-<img src="/magic-api/images/qq-group-qrcode.png" alt="群号: 700818216" class="no-zoom" style="width:200px;">
-
-#### magic-api官方QQ群: <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">700818216</a>
+| 微信群 | QQ群 |
+| ----- | --- |
+| <img src="/images/wxcode.png" alt="作者微信" width="155px" height="155px"> | <img src="/images/qq-group-qrcode.png" alt="QQ群" width="155px" height="155px"> |
+| 备注：加群，邀您加入群聊| <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">点击加入QQ群：700818216</a> |
 :::
 
 <!-- AD -->
