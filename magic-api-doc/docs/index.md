@@ -121,7 +121,7 @@ data:
     link: http://www.luoran.net/
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
-  - name: 北京创金启富科技公司
+  - name: 北京创金智慧科技有限公司
     desc: 投研系统开发
     avatar: /images/logos/cjqf.png
     link: https://www.5irich.com/#/home
