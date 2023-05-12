@@ -112,7 +112,7 @@ data:
   - name: 北京信创达科技有限公司
     desc: 医疗信息化系统
     avatar: /images/logos/xcd.jpg
-    link: https://www.dfiia.net
+    link: http://www.dfiia.net
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
   - name: 上海泺冉信息技术有限公司
