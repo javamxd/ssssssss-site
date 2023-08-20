@@ -16,3 +16,17 @@ setInterval(function(){
 
     }
 }, 500)
+
+
+var timer = setInterval(() => {
+	const element = document.querySelector('.qrcode-tfsc')
+	if(element){
+		if(element.getAttribute('style')){
+			clearInterval(timer)
+		} else {
+			element.setAttribute('style', `height:117px; background-image: url(/magic-api/ad/qrcode-${Math.floor(Math.random() * 2) + 1}.png)`)
+		}
+	}
+	
+}, 100)
+			

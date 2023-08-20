@@ -127,6 +127,30 @@ data:
     link: https://www.5irich.com/#/home
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
+  - name: 上海万序健康科技有限公司
+    desc: 后台接口开发
+    avatar: /images/logos/wxjk.png
+    link: http://www.vanxsoft.com
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 乔库斯(汕头)科技股份有限公司
+    desc: 自研工具平台接口开发
+    avatar: /images/logos/jk.png
+    link: http://www.joekools.com/swatow
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 河南冠源电子科技有限公司
+    desc: 智慧供热报表部分接口开发
+    avatar: /images/logos/gydz.png
+    link: http://www.hngydzkj.com/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 宁波互邦软件有限公司
+    desc: 商邦平台
+    avatar: /images/logos/hb.png
+    link: https://www.sohelp.net
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
 ```
 :::
 <style>
@@ -164,10 +188,10 @@ data:
 或者加入我们的交流群：
 
 ::: center
-| 微信群 | QQ群 |
-| ----- | --- |
-| <img src="images/wxcode.png" alt="作者微信" width="155px" height="155px"> | <img src="images/qq-group-qrcode.png" alt="QQ群" width="155px" height="155px"> |
-| 备注：加群，邀您加入群聊| <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">点击加入QQ群：700818216</a> |
+| 微信群 | QQ群 | 推荐公众号 | 推荐小程序 |
+| ----- | --- | --- | --- |
+| <img src="images/wxcode.png" alt="作者微信" width="155px" height="155px"> | <img src="images/qq-group-qrcode.png" alt="QQ群" width="155px" height="155px"> | <img src="ad/qrcode-w1.jpg" alt="推荐公众号" width="155px" height="155px"> | <img src="ad/qrcode-w2.png" alt="推荐小程序" width="155px" height="155px"> |
+| 备注：加群，邀您加入群聊| <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">点击加入QQ群：700818216</a> | 天府书虫 | 天府书虫 |
 :::
 
 <!-- AD -->
