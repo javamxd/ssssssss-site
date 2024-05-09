@@ -12,4 +12,4 @@
 ---
 
 ### 文档新地址
-[https://magicboot.net](https://magicboot.net)
+[https://magicboot.net](https://magicboot.net)  
