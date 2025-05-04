@@ -151,6 +151,48 @@ data:
     link: https://www.sohelp.net
     bgColor: '#f1f1f1'
     textColor: '#2a3344'
+  - name: 台州市环境科学设计研究院有限公司
+    desc: 后台系统接口开发平台
+    avatar: /images/logos/tzhky.png
+    link: https://www.tzhky.cn
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 佛山市振联科技有限公司
+    desc: 跨数据库接入层
+    avatar: /images/logos/fszlkj.png
+    link: https://fszlkj.cn/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 旭辉永升服务
+    desc: 数据中台-数据分发
+    avatar: /images/logos/ysservice.png
+    link: https://www.ysservice.com.cn
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 四川国民金赋网络技术有限公司
+    desc: 后台管理系统
+    avatar: /images/logos/gmceo.png
+    link: http://www.gmceo.cn
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 北京云程信创科技有限责任公司
+    desc: 低代码开发平台
+    avatar: /images/logos/yunchengxc.png
+    link: http://www.yunchengxc.com
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: 中国人寿保险（海外）股份有限公司
+    desc: 智能博文收集分析
+    avatar: /images/logos/chinalife.png
+    link: https://www.chinalife.com.hk/
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
+  - name: xc-union 多平台返利系统
+    desc: xc-union 多平台返利系统
+    avatar: /images/logos/union.png
+    link: https://gitee.com/xc_java/xc-union
+    bgColor: '#f1f1f1'
+    textColor: '#2a3344'
 ```
 :::
 <style>
@@ -188,10 +230,10 @@ data:
 或者加入我们的交流群：
 
 ::: center
-| 微信群 | QQ群 | 推荐公众号 | 推荐小程序 |
+| 微信群 | QQ群 | 
 | ----- | --- | --- | --- |
-| <img src="images/wxcode.png" alt="作者微信" width="155px" height="155px"> | <img src="images/qq-group-qrcode.png" alt="QQ群" width="155px" height="155px"> | <img src="ad/qrcode-w1.jpg" alt="推荐公众号" width="155px" height="155px"> | <img src="ad/qrcode-w2.png" alt="推荐小程序" width="155px" height="155px"> |
-| 备注：加群，邀您加入群聊| <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">点击加入QQ群：700818216</a> | 天府书虫 | 天府书虫 |
+| <img src="images/wxcode.png" alt="作者微信" width="155px" height="155px"> | <img src="images/qq-group-qrcode.png" alt="QQ群" width="155px" height="155px"> |
+| 备注：加群，邀您加入群聊| <a href="https://qm.qq.com/cgi-bin/qm/qr?k=38qddUeqrk_x29Xril9a_jxnoCGTmPRF&jump_from=webapi" target="_blank">点击加入QQ群：700818216</a> |
 :::
 
 <!-- AD -->
