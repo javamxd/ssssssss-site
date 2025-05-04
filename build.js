@@ -3,9 +3,7 @@ const fs = require('fs');
 const process = require('child_process');
 const target = './dist';
 const docs = [
-	['magic-api-doc', 'docs/.vuepress/dist/', 'magic-api'],
-	['magic-page-designer-doc', 'docs/.vuepress/dist/', 'magic-page-designer'],
-    ['magic-boot-doc', 'docs/.vuepress/dist/', 'magic-boot']
+	['magic-api-doc', 'docs/.vuepress/dist/', 'magic-api']
 ]
 const isExist = (path) => { // 判断文件夹是否存在, 不存在创建一个
   if (!fs.existsSync(path)) {
