@@ -34,7 +34,7 @@ data:
   - name: 快速开发平台 magic-boot
     desc: 可在magic-api编写Vue代码，既改即生效
     avatar: /images/logos/magic-boot.png # 可选
-    link: https://gitee.com/ssssssss-team/magic-boot # 可选
+    link: https://magicboot.net # 可选
     bgColor: '#f1f1f1' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
     textColor: '#2a3344' # 可选，默认var(--textColor)
   - name: 广州天势网络
