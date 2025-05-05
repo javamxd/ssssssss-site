@@ -39,7 +39,7 @@ module.exports = {
       { text: '资源', items: [
           { text: 'Gitee', link: 'https://gitee.com/ssssssss-team/magic-api' },
           { text: 'Github', link: 'https://github.com/ssssssss-team/magic-api' },
-          { text: '演示', link: 'https://magic-api.ssssssss.org/' }
+          { text: '演示', link: 'https://magic-api.ssssssss.org.cn/' }
         ]
       },
       {
